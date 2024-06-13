@@ -1,0 +1,1122 @@
+mLocARNA --- multiple Local (and global) Alignment of RNA --- LocARNA 2.0.0RC8
+Copyright Sebastian Will
+
+Compute pair probs ...
+Compute pairwise alignments ... 
+Perform progressive alignment ...
+                           .....---....--------------------------(((.(((......(((((...----))).))................------.........(((((((..((((.----..
+NW_021705781.1:65798-66371 UCAGU---CGGA--------------------------GAACGCCAUGCUAAUGAGCCA----CUCCAUGACAUCCCCGAGCCCC------AGCCCAUUCCAAGAAUCAACAGC----AA
+NW_021705755.1:10160-10793 UUAUUGCACGGAAUCCUGCCUCAGUUUACACAUGUUACACGUCUCAAACGUCUCGUCAAUAAUGCGCAGUAGCUUUUCGUACGCCACGUCAAGGUCUUUGUUGAGGAUAAUAUGAGAAAA
+                           ......................................(((.(((......(((((.......))).))...............................(((((((..((((.......
+
+                           ....))---))..)))))))............................................---))).))).......((((...........))))....................
+NW_021705781.1:65798-66371 ACAACU---GUGUGUUUUUGCACGUCUCCACUGGUAGGAAAAACCCCAACUCCUCUUCUGUCAU---GGCAUUCUUUGCAAGUGCCUUGUUCAGCAGCACCACCGUCGGCCAGUCGCGGC
+NW_021705755.1:10160-10793 AAAAGUGGAAUUUUCCUCGAC-------------------AAACCGCAACUCCUCUUCAGCAGUGCGGAGACGUCGUUGAAGGACCUCCUC--GUUGUCCGCCC-----CCCGCUUCCGA
+                           ....))...))..))))))).-------------------...........................))).))).......((((......--...))))....-----...........
+
+                           ..............((.(((((....))))).................)).....(((((.......)))))...---------------(((...((((.((((..((.......))--
+NW_021705781.1:65798-66371 AUGCCCCAUCGGAGCCCUUCAGUCUACUGAACAUGACAGACGCCAUAGGGAGCAAGUGCGGCGACAACGCAUCCA---------------CAAGGAAGAUUAAGGCAGGCUUGACACC--
+NW_021705755.1:10160-10793 AUGCGCUCGCACAGUUCCUCCAUCGAUGGGGGAG-------------UAACAAAAAUGUA----CAAUACAUUCAGCGACUCUUUCAUAUUGCGU-AUCUUUUGAACACCUUUAAUGUCC
+                           ..............((.(((((....)))))...-------------.)).....(((((----...)))))..................(((..-((((.((((..((.......))..
+
+                           -..))))))))))).....((-(((....))))).......(((...-------........)))...((.....((((.........---------(((.--..))).....))))...
+NW_021705781.1:65798-66371 -CUCCUUGUCUUUGAUGGAGU-UCUCCCAGGAGCGAAUAAACCUCUC-------CCACAGCGAGGCCAGUUCCCCGCCCACCUCGCGG---------AGUU--CCACUGUGCGGGGCAAG
+NW_021705755.1:10160-10793 ACCUCAAGGAUGCAAACCUUUCCGGCGUCCCGAACCACAUUUAUCGCAUUCACACUAGUGCCAUACAAAUU-CCCAUGCACCUCGCAGACCUCAAUAAACUCACCGUUGUCCCGCAUGCU
+                           ...))))))))))).....((.(((....))))).......(((..................)))...((.-...((((..................(((.....))).....))))...
+
+                           )).--------------.((((((.((.((......)).))))))))..((.....((((((......))))))...)).............(((...((...----))..........)
+NW_021705781.1:65798-66371 ACC--------------UUUUGCUGCGGCGCCUUAAUGCCGAGUAAAUGCACCUCCUGCCCCUGCGUUGGGGCGUCGUGGAUCGGACGGGCCUGCAGAGUGCC----GCUUUCGCACAUG
+NW_021705755.1:10160-10793 GUCCACCGUGGCACGAUCAGAAAAGUG-AUACUCGCGUCCAUUUUCUUCACCUUCACGCGGCGCCCUUGUUGUGU--GUGA--------GACGGA--AUAGCCAAAAUAAUCCGGAAACU
+                           ))................((((((.((-((......)).))))))))..((.....((((((......)))))).--))..--------...(((--.((.......))..........)
+
+                           )).(((........--...)))..-......((((.........))))....((.............))...------------........
+NW_021705781.1:65798-66371 CAACUGAGCUGCCG--CAACAGGU-UUGUUUUUCCCGAGCCCGAGGAGCCAAGCACGUAAACGACGAGCGAG------------CUUUUCAU
+NW_021705755.1:10160-10793 CC-UUCAGCAAGCGGCCAAGAAGCGCUCCUUUCCCUACGCCAGAGGGGCCACAGACAGCAAUUGCCUCUAAUGGAAACUCACUCCUUACCAU
+                           ))-(((.............))).........((((.........))))....((.............)).......................
+                           ........................................................................((((.(((.....)))..)))).....(((.((((.............
+NW_021705781.1:65798-66371 UCAGU---CGGA--------------------------GAACGCCAUGCUAAUGAGCCA----CUCCAUGACAUCCCCGAGCCCC------AGCCCAUUCCAAGAAUCAACAGC----AA
+NW_021705755.1:10160-10793 UUAUUGCACGGAAUCCUGCCUCAGUUUACACAUGUUACACGUCUCAAACGUCUCGUCAAUAAUGCGCAGUAGCUUUUCGUACGCCACGUCAAGGUCUUUGUUGAGGAUAAUAUGAGAAAA
+NW_021705918.1:28921-29239 UCACUGCAUGUAAAAUGGCCAUGGUAC--------------------------------------------CACAAGCGUUCCCAACGGUUUGUC--UAGAAAAAAAAAAU---------
+                           ...........................--------------------------------------------.((((.(((.....)))..)))).--..(((.((((....---------
+
+                           .............)))).)))..................................................................((......(((......((((-........)))
+NW_021705781.1:65798-66371 ACAACU---GUGUGUUUUUGCACGUCUCCACUGGUAGGAAAAACCCCAACUCCUCUUCUGUCAU---GGCAUUCUUUGCAAGUGCCUUGUUCAGCAGCACCACCGUCG-GCCAGUCGCGG
+NW_021705755.1:10160-10793 AAAAGUGGAAUUUUCCUCGAC-------------------AAACCGCAACUCCUCUUCAGCAGUGCGGAGACGUCGUUGAAGGACCUCCUC--GUUGUCCGCCC------CCCGCUUCCG
+NW_021705918.1:28921-29239 ----------CCUUUUUAUUCAAU--------------------------------------------------------AGUUCCUUUAUUUCAGCAGCACGCAUUACCCCCGUCUUAA
+                           ----------...)))).)))...--------------------------------------------------------.......((......(((......((((.........)))
+
+                           )..........)))....(((((....)))))))......................................................................................
+NW_021705781.1:65798-66371 CAUGCCCCAUCGGAGCCCUUCAGUCUACUGAACAUGACAGACGCCAUAGGGAGCAAGUGCGGCGACAACGCAUCCA---------------CAAGGAAGAUUAAGGCAGGCUUGACACC-
+NW_021705755.1:10160-10793 AAUGCGCUCGCACAGUUCCUCCAUCGAUGGGGGAG-------------UAACAAAAAUGUA----CAAUACAUUCAGCGACUCUUUCAUAUUGCGU-AUCUUUUGAACACCUUUAAUGUC
+NW_021705918.1:28921-29239 UAU----CCUCUGCAUCCAUUUCAGGUGAAAUAGGGU-----------------------------------------------------------------------------------
+                           )..----....)))....(((((....)))))))...-----------------------------------------------------------------------------------
+
+                           ..........................................((((((((........))))))))......................(((.......((.......)))))........
+NW_021705781.1:65798-66371 --CUCCUUGUCUUUGAUGGAGU-UCUCCCAGGAGCGAAUAAACCUCUC-------CCACAGCGAGGCCAGUUCCCCGCCCACCUCGCGG---------AGUU--CCACUGUGCGGGGCAA
+NW_021705755.1:10160-10793 CACCUCAAGGAUGCAAACCUUUCCGGCGUCCCGAACCACAUUUAUCGCAUUCACACUAGUGCCAUACAAAUU-CCCAUGCACCUCGCAGACCUCAAUAAACUCACCGUUGUCCCGCAUGC
+NW_021705918.1:28921-29239 ----------------------------------ACAAAAGUAUCAUGGCACGAACGGGUCGUGGUACAAAGCCCAACAUUUCAGGGUCGA-------UGCUUAUGACGUCGCA------
+                           ----------------------------------........((((((((........))))))))......................(((-------((.......)))))..------
+
+                           .........................................................(((((((....)))))))......................((((.......))))........
+NW_021705781.1:65798-66371 GACC--------------UUUUGCUGCGGCGCCUUAAUGCCGAGUAAAUGCACCUCCUGCCCCUGCGUUGGGGCGUCGUGGAUCGGACGGGCCUGCAGAGUGCC----GCUUUCGCACAU
+NW_021705755.1:10160-10793 UGUCCACCGUGGCACGAUCAGAAAAGUG-AUACUCGCGUCCAUUUUCUUCACCUUCACGCGGCGCCCUUGUUGUGU--GUGA--------GACGGA--AUAGCCAAAAUAAUCCGGAAAC
+NW_021705918.1:28921-29239 --------------------------------------------------------AAACUCCA-CCUUGGGGUU----------------------GGUUACACCAAGACU-------U
+                           --------------------------------------------------------.(((((((-...)))))))----------------------((((.......))))-------.
+
+                           ....(((.............)))..((((((((.........))))))))...........................................
+NW_021705781.1:65798-66371 GCAACUGAGCUGCCG--CAACAGGU-UUGUUUUUCCCGAGCCCGAGGAGCCAAGCACGUAAACGACGAGCGAG------------CUUUUCAU
+NW_021705755.1:10160-10793 UCC-UUCAGCAAGCGGCCAAGAAGCGCUCCUUUCCCUACGCCAGAGGGGCCACAGACAGCAAUUGCCUCUAAUGGAAACUCACUCCUUACCAU
+NW_021705918.1:28921-29239 UUCAGAUAUGCAUUCAUCACAUCGGGGUUGCUUUC----GAUGGGCAGCCAACA------------------------------CUUCGACAU
+                           ....(((.............)))..((((((((..----...))))))))....------------------------------.........
+                           ..(((((.((..(((...))).))..)))))...............(((......)))((.(((((..---------..((.(((.(((...........((((......))))))).))
+NW_021705860.1:37802-39002 AUGUGGCAGCUUCACAACGUGCGCUUGCCGCCGCGGAGGUUGUGUGACGCAAAGCCGUUGAUGUCACC---------AUUACAGGGGGGGUACACGCGAGGUGACGCGUGUCACUCUUCU
+NW_021706144.1:1909-3022   UUAGGCAAAAAGUUUGGAGAACUU-CUGCUUC------------UGCUCCUUCCGGAGGGCAGCUGCCCCCUCAGCGAUGGCCUGGCGG----------AUGGCUGCGACGUCACUGGCG
+                           ..(((((.((..(((...))).))-.))))).------------..(((......)))((.(((((.............((.(((.(((----------.((((......))))))).))
+
+                           ).))....)))))..))....(((........)))..................((..((((..----..((((..............................((..((((((.(((((.
+NW_021705860.1:37802-39002 UUUGCAGGUGGCGGACACGAAGACGCGUCGGAGUCGGAGCCAAACUCGCAGGCGUCAUUGCAG----GCCUGCUUUGUCGCACCGCAGCCAUGCACGUCAUCCUCACCGGUUGAAGCGGC
+NW_021706144.1:1909-3022   GGCCCGCCCAGCUG-CUCAAAGGCGU-UCAGCGCC---------------UCCGCCGCUGCGGCGUAGUCACGUCCGCCGCAAAGGGCGACUGCCAGUCGAUGGUGGGCCUUGAGGUUC-
+                           ).))....))))).-))....(((..-.....)))---------------...((..((((........((((..............................((..((((((.(((((-
+
+                           ..........))))).))))))..)).)))).....))))..))........((((((.((.....--..))))))...))...((...(((((..(((((((...(((((.........
+NW_021705860.1:37802-39002 GUCGCAGGAAUCGCUGCAACCGCAGAAGCAGCCGCCGCAAGAGCAGCAACAACUUGUCAUUCGACA--GGAAGACAUACGGGACGAGGACUUUCAGCGGCUAGAGGUGUUGGGUGAUGGU
+NW_021706144.1:1909-3022   GUGGCAUC--GAGCUGCAGGGC-AGCCCGUGCGUCCGCAGCGGCGGCUUCGUUUUUGC-CGAGACGGUGGUGGCAA---AGGCUGCGGUUGAGCAGUGCGGAGAGUCGCAG---------
+                           ........--))))).))))))-.)).)))).....))))..))........((((((-((.........))))))---))...((...(((((..(((((((...(((((---------
+
+                           (((((......)))))(((...............)))..))))).--)))))))....)))))...))......(((............))).(((--.((....)).))).(((((...
+NW_021705860.1:37802-39002 UCAUACUCUGUUGUGGUUGCCGCCCGUCAUUUGCCGACCCAGCAG--CUGGUUGCACUGAAGGAACUCUCGCGACGACGCCUGAAGGAGUUGGAGC--UGGAGAAUCAGUUGCAGUGGGA
+NW_021706144.1:1909-3022   CGCAG---UGACUGCGGCCUCGUUCGGCA--GGAGGUCCCUGCGGCCCUCCGUG---AGUUCGACGGC-CUCGUCGUAGGCC----UUCACGGCCGCCUUGAAAUCACCGGCGGUGAAAA
+                           (((((---...)))))(((..........--...)))..)))))...)))))))---.)))))...))-.....(((.....----...))).(((...((....)).))).(((((...
+
+                           ((---......)).......))))).(((((......)))))-.......((.((((.(((...((((.................)))).)))))))(((((((-------------...
+NW_021705860.1:37802-39002 GA---UCAACGUUCACCGUACGCUGCGCCAUCCCAACGUGGU-CAGGAUGCUGAGCUACUACGUCACCCCACAGAACGUUGUGCUGGUGCUGGAGUUGUGUCCC-------------UGU
+NW_021706144.1:1909-3022   AGCUGUUACCGUUCACCU--UCGCCUGCUGUGCCUUCGCGGUAUCCGCUUCGCUGAU-GCGCUUCGUGUCAC----------UCUCGCGCUGCAUCACUGCCGAGGUCAUCUGCGCUUGG
+                           ((.........)).....--))))).(((((......)))))........((.((((-(((...((((....----------...)))).)))))))(((((((................
+
+                           )))))))........-......))((.....)).........(((........)))....((..(((((.(((((....................))))).))).)).))..........
+NW_021705860.1:37802-39002 GGGACGCUUCUGCAG-AAGCUGAGGGCAAUGCCGCAAGGAAGGUUUGAUGAACGACGGGCGUCGCGGUAUGUGCGACAGGCCGCACGGGCGCUAGCGUAUCUGCACGGACAUGGCAUUGC
+NW_021706144.1:1909-3022   UUGGCGGUGUCGUAGCUAGUCGUGGGCGGUUCCCGCAGGAGGGCUUCGU----AGUGGGCGA--GAGUGCAGUCGAC-----------------GCGGCUCCAC-UCGUCGAGGGCGGGG
+                           )))))))...............))((.....)).........(((....----)))....((--(((((.(((((..-----------------.))))).)))-)).))..........
+
+                           ...........-------((...(((((((.....)))))))...))..........((....(((((......(((.((.((...((...........---------..........))
+NW_021705860.1:37802-39002 CCACCGCGACU-------UGAAACUAGAGAACGUUUUUUUAGAUGCGCGGGGUGUGGCAAGGCUGGGAGAUUUUGGGUGGAGUAAGGCCGUUGAGGAGC---------CGACGGUGAAGC
+NW_021706144.1:1909-3022   UCAUCGUGGCUACAGAGAAGGAAGGCGUCCCCG-CGGAUGUCGCGCUGCACGAGCGUGCUGGCACGGGA----GUUGAGGGCGAGGUCCUUAAAGCGGCCACUGUCGUCGAUGUAGAGGG
+                           ..................((...(((((((...-.)))))))...))..........((....(((((.----.(((.((.((...((..............................))
+
+                           ...)).)).))).))..)))......))--------------..((.(((((..--((((..((((...........))))...))))..)))))..))..................(((
+NW_021705860.1:37802-39002 ACGACCCCGCCCCUCAUUCGGACAACUG--------------CGGCACUACCUC--ACACAGUGCGGGCGGCGAUGAUGCGAAUGUGUGUGGUGGCGGCGGCCGGCUAACGGUGUGUGGC
+NW_021706144.1:1909-3022   AAGUGCCCACAAACC--UGUUGCCGCGCCCUGGCAUGAGCAACGGUAUGAUCUCGAAGGAAGUCUGCUC--------CAGGUAGUCCU-CGAUCAUUGCG-----------------UGC
+                           ...)).)).))).))--)))......))................((.(((((....((((..((((...--------))))...))))-.)))))..)).-----------------(((
+
+                           (.((((((((((((........)))))..))))))).))))...................---((((....-..((((((((((.(((...---)))-)))......((.((((......
+NW_021705860.1:37802-39002 ACGCUGGACUAUUUGUCCCCGGAAAUGCUGUCUGGCAUGCCUCACACCUUUAAGACUGAU---GUGUGGUC-UCUUGGUGUCAUGCUCGCG---GAG-AUGCUCACCGGCGCGCCCCCCU
+NW_021706144.1:1909-3022   UGCUGCUGCUCGCU-----CGUGGCGGCGGCAGCGGCAGCAGCAGCGUCUCCCUGCUGCUUCGCCUCCUUCAUCUUCGCCGUGAGGUGUCGCGCCAUCUCG-----CGCCGCUGAUCCUC
+                           (.((((((((((((-----...)))))..))))))).))))......................((((.......((((((((((.(((......))).)))-----.((.((((......
+
+                           ......)))).)))))))))..........))))..................((....((((-((.((..........-------------)).))....))))..))............
+NW_021705860.1:37802-39002 UUUACUGCGUGUCACACCAGGGCACCCUCGACGCAAUUCGCGAGGCGGACCCUCACUUGGGC-GACGACGUUCAUAUC-------------UCAUCACUGGCCCGUGAAUUGGUGCUGAC
+NW_021706144.1:1909-3022   GGAAAGCAGCUGCCGGCGAAAGUACUGCUGGAGGGAGGCGCGAAACUCCUCAUCGCUGCCGCCGGCAAACGUCAUCUCGCGCGGCGCGGCGUUGUCGUCGGCGG--GAAUCAGCACAUAC
+                           ......)))).)))))))))..........))))..................((....((((.((.((.......................)).))....))))--))............
+
+                           ............................(((....)))((..((((...---...))))..))...............................
+NW_021705860.1:37802-39002 AAUGCUGCAGAAGGACCCGGACGCGCGUCCAACAAUGGCAGAGGUGCUG---CAACACCCAUGGACGAGACCACACCGGGAGAAGGCGAAGUAA
+NW_021706144.1:1909-3022   ----CGGAAGAAGUUCACUGUGGGGCCUUGACCACUCAUCGCGUGCCUUGCCUGGGCGCACGGGAU-------------------------CAU
+                           ----........................(((....)))((..((((.........))))..))...-------------------------...
+                           ....((((..((---(((...)))))..)))).((...-----------------..))........((.((....----------.)).((((((((.......------((..(((((
+NW_021705860.1:37802-39002 AUGUGGCAGCUU---CACAACGUGCGCUUGCCGCCGCG-----------------GAGGUUGUGUGACGCAAAGCC----------GUUGAUGUCACC---------------AUUACAG
+NW_021706144.1:1909-3022   UUAGGCAAAAAG---UUUGGAGAACUU-CUGCUUC-----------------------------UGCUCCUUCCGG----------AGGGCAGCUGCCCCCUCAG------CGAUGGCCU
+NW_021705798.1:28511-29897 AUGGUGUGCAGAAACGGCAAUGCCUCCUCACAAUUUAGCGUCUCCUCCAUACAGCAGGAACGUGAGCUGCCGCAGCAACAGCAACAGCGGCAGCAGCAACAACAGGCCGCACUGUUUGGU
+                           ....((((..((...(((...)))))..)))).((......................))........((.((...............)).((((((((.............((..(((((
+
+                           (((((...........(((........)))---------))))))))))-------))))))))))...........))..........((.....)).......--.............
+NW_021705860.1:37802-39002 GGGGGGUACACGCGAGGUGACGCGUGUCAC---------UCUUCUUUUG-------CAGGUGGCGGACACGAAGACGCGUCGGAGUCGGAGCCAAACUCGCAGGC--GUCAUUGCAG---
+NW_021706144.1:1909-3022   GGCGG----------AUGGCUGCGACGUCA---------CUGGCGGGCC-------CGCCCAGCUG-CUCAAAGGCGU-UCAGCGCC---------------UCC--GCCGCUGCGGCGU
+NW_021705798.1:28511-29897 UUGGAGCACCUUAUGACGGCCACGUAUCCGCCACCUAGCUUCGAGCCGAGCCGCACAGUGCUGCUGC------GACGCAAGGUCGACGUCAUUAACUGCAUCACCAAGCGAAUUCGGCGU
+                           (((((...........(((........))).........)))))))))).......)))))))))).------....))..........((.....))......................
+
+                           ............((....((.....((((.......--))))..(((((..((((...........))))..))))).....))...))((((..((.............((((.(((..
+NW_021705860.1:37802-39002 -GCCUGCUUUGUCGCACCGCAGCCAUGCACGUCAUC--CUCACCGGUUGAAGCGGCGUCGCAGGAAUCGCUGCAACCGCAGAAGCAGCCGCCGCAAGAGCAGCAACAACUUGUCAUUCGA
+NW_021706144.1:1909-3022   AGUCACGUCCGCCGCAAAGGGCGACUGCCAGUCGAU--GGUGGGCCUUGAGGUUC-GUGGCAUC--GAGCUGCAGGGC-AGCCCGUGCGUCCGCAGCGGCGGCUUCGUUUUUGC-CGAGA
+NW_021705798.1:28511-29897 AUCAGUGAGGGCCUCACAGUUGGCAGUUUCUCCUUCAAAAACCGGCGUG-CGCUGGCCCACA----CAGUCGUACGCAGUGCACUUCAGGCCGCCUA-----CCACAAUUGCCGUCGAGA
+                           ............((....((.....((((.........))))..(((((-.((((.......----))))..))))).....))...))((((..((-----........((((.(((..
+
+                           .....)))))))...............))...))))(((.((((.....(((....))).....))....((((((.............)))))).....)).)))..............
+NW_021705860.1:37802-39002 CA--GGAAGACAUACGGGACGAGGACUUUCAGCGGCUAGAGGUGUUGGGUGAUGGUUCAUACUCUGUUGUGGUUGCCGCCCGUCAUUUGCCGACCCAGCAG--CUGGUUGCACUGAAGGA
+NW_021706144.1:1909-3022   CGGUGGUGGCAA---AGGCUGCGGUUGAGCAGUGCGGAGAGUCGCAG---------CGCAG---UGACUGCGGCCUCGUUCGGCA--GGAGGUCCCUGCGGCCCUCCGUG---AGUUCGA
+NW_021705798.1:28511-29897 CAUCUUUGUGGCCUC------CUCAUUUGAUGCGGCUGAGGGGGU--GCCUGUGUACAGCGACACCAUCGCGGGGGCGUU---------UCUCUGCAACACCGUCAAUUCCGCCGACCCA
+                           .....)))))))...------......))...))))(((.((((.--..(((....))).....))....((((((....---------)))))).....)).)))..............
+
+                           ((.....))......................................((((......)))).............((.....((.(((................))).))...))(((...
+NW_021705860.1:37802-39002 ACUCUCGCGACGACGCCUGAAGGAGUUGGAGC--UGGAGAAUCAGUUGCAGUGGGAGA---UCAACGUUCACCGUACGCUGCGCCAUCCCAACGUGGU-CAGGAUGCUGAGCUACUACGU
+NW_021706144.1:1909-3022   CGGC-CUCGUCGUAGGCC----UUCACGGCCGCCUUGAAAUCACCGGCGGUGAAAAAGCUGUUACCGUUCACCU--UCGCCUGCUGUGCCUUCGCGGUAUCCGCUUCGCUGAU-GCGCUU
+NW_021705798.1:28511-29897 GUGCUUUACGCGUCGG------------------------UCCUGUCAAGCUUCGUUGCUUACGGUGUGGACUUCGCUGCGCCGCGUCACAGUGCGGGUGAACACGCGGCCGCGAGCAAC
+                           ((.....)).......------------------------.......((((......)))).............((.....((.(((................))).))...))(((...
+
+                           .(((....((....)).....)))..))).....((((((............-------------------....))))))................((.((...-)).))((.((.(((
+NW_021705860.1:37802-39002 CACCCCACAGAACGUUGUGCUGGUGCUGGAGUUGUGUCCC--------------------------------UGUGGGACGCUUCUGCAG-AAGCUGAGGGCAAU-GCCGCAAGGAAGGU
+NW_021706144.1:1909-3022   CGUGUCAC----------UCUCGCGCUGCAUCACUGCCGAGGUCAUCUGCGC-------------------UUGGUUGGCGGUGUCGUAGCUAGUCGUGGGCGGU-UCCCGCAGGAGGGC
+NW_021705798.1:28511-29897 CAGGCGACGCCACCGC---UUCCUUUGCUAGACACCGCGCUCUACUGCCUGCAUGAGACAGCAAAGACGAUUUGUGCGCGGCCUGCGGCGCCACUUGAGGAAAAUAUUACUGAGCAUAAU
+                           .(((....((....))---..)))..))).....((((((...................................))))))................((.((....)).))((.((.(((
+
+                           (........(((....))).((.((-------.(((((..((............))..))))).))---..))(((..-.)))..)))).)).))..........((...((((.((...
+NW_021705860.1:37802-39002 UUGAUGAACGACGGGCGUCGCGGUA-------UGUGCGACAGGCCGCACGGGCGCUAGCGUAUCUG---CACGGACAU-GGCAUUGCCCACCGCGACU-------UGAAACUAGAGAACG
+NW_021706144.1:1909-3022   UUCGU----AGUGGGCGA--GAGUG-------CAGUCGAC-----------------GCGGCUCCA---C-UCGUCGA-GGGCGGGGUCAUCGUGGCUACAGAGAAGGAAGGCGUCCCCG
+NW_021705798.1:28511-29897 G--AAAACGGCGACCCCGCACCAAAGCAAGAUCAAGGCAGUUUCCA-------GAAUGGUUUUCUUACGCUGGUGAAUAGUUACACGUUGUGUUCGCUUCUGAGGUU---CUUUGCCGAG
+                           (--......(((....))).((.((........(((((..((....-------.))..))))).)).....))(((....)))..)))).)).))..........((---((((.((...
+
+                           ..)).))))...))...............((((..((....((----------------(((((((....((((...(((........))).......))))....))----))))))).
+NW_021705860.1:37802-39002 UUUUUUUAGAUGCGCGGGGUGUGGCAAGGCUGGGAGAUUUUGG----------------GUGGAGUAAGGCCGUUGAGGAGC---------CGACGGUGAAGCACGAC----CCCGCCCC
+NW_021706144.1:1909-3022   -CGGAUGUCGCGCUGCACGAGCGUGCUGGCACGGGA----GUU----------------GAGGGCGAGGUCCUUAAAGCGGCCACUGUCGUCGAUGUAGAGGGAAGUG----CCCACAAA
+NW_021705798.1:28511-29897 GAGGAGGAGGAGGGGGGGGAG-GUGGUGGUGGAAGCAAAAUGGAAUGAGGCGAAGCCAAGCGCUGGGGGAAGGA--AGCG-----UGACGCAGCCGACUCCUCACUUCGAGAGGCGCCCU
+                           ..)).))))...)).......-.......((((..((....((................(((((((....((((--.(((-----...))).......))))....))....))))))).
+
+                           ))..)).)).--------------((.((....)).)).......(((((------((.((....)).))..(((((....))...)))...........))).))...........((.
+NW_021705860.1:37802-39002 UCAUUCGGAC--------------AACUG--------------CGGCACU------ACCUC--ACACAGUGCGGGCGGCGAUGAUGCGAAUGUGUGUGGUGGCGGCGGCCGGCUAACGGU
+NW_021706144.1:1909-3022   CC--UGUUGC--------------CGCGCCCUGGCAUGAGCAACGGUAUG------AUCUCGAAGGAAGUCUGCUC--------CAGGUAGUCCU-CGAUCAUUGCG-------------
+NW_021705798.1:28511-29897 UGCGUUACACCACAGCAGUUCUUUACCAGUUGUUUAGUAUGAAACUUGGUCCACGUGCGCUAGAGGGCGCAUUGCCAUCCUUGUCAGCAUCAUCUUCGGUGCC-AAUGUCAUCUAUUAGC
+                           ))..)).))...............((.((....)).)).......(((((......((.((....)).))..(((((....))...)))...........)))-))...........((.
+
+                           .....(((((((((((.---------((((..---------......))))...)))))))))))......))....-----------------.((...((........))..)).(((
+NW_021705860.1:37802-39002 GUGUGGCACGCUGGACU---------AUUUGU---------CCCCGGAAAUGCUGUCUGGCAUGCCUCACACCUUUA-----------------AGACUGAU---GUGUGGUC-UCUUGG
+NW_021706144.1:1909-3022   ----UGCUGCUGCUGCU---------CGCU--------------CGUGGCGGCGGCAGCGGCAGCAGCAGCGUCUCC-----------------CUGCUGCUUCGCCUCCUUCAUCUUCG
+NW_021705798.1:28511-29897 UCGUUUUUCGCCUUACUGUUUAAACGGGUGAUCGAUUAUUGCUCCUUCGCCGGUGUGAGGUGGAACCUCUACUAUGAGGUGGGAGUGGAAGCGGCGCAGAAGGCGCUUGCCUACGCCCCG
+                           .....(((((((((((..........((((.................))))...)))))))))))......))......................((...((........))..)).(((
+
+                           (((-((((((........)))))).-----------------------.....((..(((....------........)))..))))))))............-.((.....))......
+NW_021705860.1:37802-39002 UGU-CAUGCUCGCG---GAG-AUGC-----------------------UCACCGGCGCGCCCCC------CUUUUACUGCGUGUCACACCAGGGCACCCUCGA-CGCAAUUCGCGAGGCG
+NW_021706144.1:1909-3022   CCG-UGAGGUGUCGCGCCAUCUCG----------------------------CGCCGCUGAUCC------UCGGAAAGCAGCUGCCGGCGAAAGUACUGCUGG-AGGGAGGCGCGAAACU
+NW_021705798.1:28511-29897 CCCUUGCUGCGAGAGACGGCAGCGCUACUCGUGUCCUAUUGCCGCCAAUUCCCUCCGCUGUAUCAGUCGGUUCUGAAGCAGGUGGGGGCGGAGGCUCACUUUAUCCUGGAUCAGCUGGUG
+                           (((.((((((........)))))).............................((..(((..................)))..))))))))..............((.....))......
+
+                           .((.((((..(((((((...((((((-....((.....)).))))))..))...))))))).)).))....................(((...................((.((....))
+NW_021705860.1:37802-39002 GACCCUCACUUGGGC-GACGACGUUC-AUAUC-------------UCAUCACUGGCCCGUGAAUUGGUGCUGACAAUGCUGCAGAAGGACCCGGACGCGCGUCCAACAAUGGCAGAGGUG
+NW_021706144.1:1909-3022   CCUCAUCGCUGCCGCCGGCAAACGUC-AUCUCGCGCGGCGCGGCGUUGUCGUCGGCGG--GAAUCAGCACAUAC----CGGAAGAAGUUCACUGUGGGGCCUUGACCACUCAUCGCGUGC
+NW_021705798.1:28511-29897 CACUCGAAGUUGUUUCACUUUCCAUCGAGCUCCCACGAGGAGAUGGAGAUG---GAACGUUACGUGUU-----CUAUGAUAAAAAAAGCAGGACGACGACGACGAACGACGACGGCGGCG
+                           .((.((((..(((((((...((((((.....((.....)).))))))..))---))))))).)).)).-----..............(((...................((.((....))
+
+                           .))....)))......................................
+NW_021705860.1:37802-39002 CUG---CAACACCCAUGGACGAGACCACACCGGGAGAAGGCGAAGUAA
+NW_021706144.1:1909-3022   CUUGCCUGGGCGCACGGGAU-------------------------CAU
+NW_021705798.1:28511-29897 ACGGCAAUGCACCACGAGGCGGCAGCCAAGCGUGA-------------
+                           .))....))).........................-------------
+                           ....((((..((............))..)))).............(((........)))....((((((((((.............)))))--))).))..........---------..
+NW_021705860.1:37802-39002 AUGUGGCAGCUU---CACAACGUGCGCUUGCCGCCGCG-----------------GAGGUUGUGUGACGCAAAGCC----------GUUGA--UGUCACC--------------------
+NW_021706144.1:1909-3022   UUAGGCAAAAAG---UUUGGAGAACUU-CUGCUUC-----------------------------UGCUCCUUCCGG----------AGGGC--AGCUGCCCCCUCAG-------------
+NW_021705798.1:28511-29897 AUGGUGUGCAGAAACGGCAAUGCCUCCUCACAAUUUAGCGUCUCCUCCAUACAGCAGGAACGUGAGCUGCCGCAGCAACAGCAACAGCGGC--AGCAGCAACAACAGGC---------CG
+NW_021705745.1:83190-84432 AU-GGCGUCUCGUGCUUGGGUGGACG--AUGCAGAUCACAACGCGGGUGAGGAGCUGCCAGGUUUUGUGAAGCAG---UCUCAUGUGCUUCCCGCAUGGGCCACCACGUCCACGCAUGCA
+                           ..-.((((..((............))--)))).............(((........)))....((((((((((..---........)))))..))).)).....................
+
+                           ((((((.(((((((((..................................))))))))).)).----....))))..((((...((((((((......))))((................
+NW_021705860.1:37802-39002 ----AUUACAGGGGGGGUACACGCGAGGUGACGCGUGUCAC---------UCUUCUUUUG-----------CAGGUGGCGGACACGAAGACGCGUCGGAGUCGGAGCCAAACUCGCAGGC
+NW_021706144.1:1909-3022   --CGAUGGCCUGGCGG----------AUGGCUGCGACGUCA---------CUGGCGGGCC-----------CGCCCAGCUG-CUCAAAGGCGU-UCAGCGCC---------------UCC
+NW_021705798.1:28511-29897 CACUGUUUGGUUUGGAGCACCUUAUGACGGCCACGUAUCCGCCACCUAGCUUCGAGCCGAGCC----GCACAGUGCUGCUGC------GACGCAAGGUCGACGUCAUUAACUGCAUCACC
+NW_021705745.1:83190-84432 GACCGCAGCGUUAUUGGC------------------------------GACAAUGGUGCAGCCAGAAGUGAGGUCGUCGUCUCUUCCUCAUCCGCACUGAUGAUGACAGCCCAAAAAA--
+                           ((((((.(((((((((..------------------------------..))))))))).)).........))))..((((...((((((((......))))((..............--
+
+                           ...........)).........)))).....)))).........................((((..((((...........))))..))))((..........)).....((((......
+NW_021705860.1:37802-39002 --GUCAUUGCAG----GCCUGCUUUGUCGCACCGCAGCCAUGCACGUCAUC--CUCACCGGUUGAAGCGGCGUCGCAGGAAUCGCUGCAACCGCAGAAGCAGCCGCCGCAAGAGCAGCAA
+NW_021706144.1:1909-3022   --GCCGCUGCGGCGUAGUCACGUCCGCCGCAAAGGGCGACUGCCAGUCGAU--GGUGGGCCUUGAGGUUC-GUGGCAUC--GAGCUGCAGGGC-AGCCCGUGCGUCCGCAGCGGCGGCUU
+NW_021705798.1:28511-29897 AAGCGAAUUCGGCGUAUCAGUGAGGGCCUCACAGUUGGCAGUUUCUCCUUCAAAAACCGGCGUG-CGCUGGCCCACA----CAGUCGUACGCAGUGCACUUCAGGCCGCCUA-----CCA
+NW_021705745.1:83190-84432 ----------GAUUUCGUGAUAAGGACCU-GGACGAACUUCUCGCGCGGACGGAGCCACUUUUGACGUCG------AAGCACGACCGCAAGCA-------UGCUGCUCUUCCACCUGUCC
+                           ----------.)).........))))...-.)))).........................((((..((((------.....))))..))))((-------...)).....((((......
+
+                           ..(((((((.----..((.....)).--.))))...))).......))))..((((((......((((((.......(((((......)))))((((.............))))))))))
+NW_021705860.1:37802-39002 CAACUUGUCA----UUCGACA--GGA--AGACAUACGGGACGAGGACUUUCAGCGGCUAGAGGUGUUGGGUGAUGGUUCAUACUCUGUUGUGGUUGCCGCCCGUCAUUUGCCGACCCAGC
+NW_021706144.1:1909-3022   CGUUUUUGC-----CGAGACGGUGGU--GGCAA---AGGCUGCGGUUGAGCAGUGCGGAGAGUCGCAG---------CGCAG---UGACUGCGGCCUCGUUCGGCA--GGAGGUCCCUGC
+NW_021705798.1:28511-29897 CAAUUGCCGU----CGAGACAUCUUU--GUGGCCUC------CUCAUUUGAUGCGGCUGAGGGGGU--GCCUGUGUACAGCGACACCAUCGCGGGGGCGUU---------UCUCUGCAAC
+NW_021705745.1:83190-84432 UUUCCGUGCUUCCCCUUCCUCGUGAUUCUGCAC---GGACGGUUCAGUGGCAUCGCAACGGGCAGCUGGCAGUGGUAGGUGGCAACCACCACUUGUACCUUUUCCA----UGCAGCCGGC
+                           ..(((((((.......((.....))....))))---))).......))))..((((((......((((((.......(((((......)))))((((.........----))))))))))
+
+                           ......))))))................((((((............))))))....................(((.............)))..........((((.(((....))).)))
+NW_021705860.1:37802-39002 AG--CUGGUUGCACUGAAGGAACUCUCGCGACGACGCCUGAAGGAGUUGGAGC--UGGAGAAUCAGUUGCAGUGGGAGA---UCAACGUUCACCGUACGCUGCGCCAUCCCAACGUGGU-
+NW_021706144.1:1909-3022   GGCCCUCCGUG---AGUUCGACGGC-CUCGUCGUAGGCC----UUCACGGCCGCCUUGAAAUCACCGGCGGUGAAAAAGCUGUUACCGUUCACCU--UCGCCUGCUGUGCCUUCGCGGUA
+NW_021705798.1:28511-29897 ACCGUCAAUUCCGCCGACCCAGUGCUUUACGCGUCGG------------------------UCCUGUCAAGCUUCGUUGCUUACGGUGUGGACUUCGCUGCGCCGCGUCACAGUGCGGGU
+NW_021705745.1:83190-84432 A--AGUUUGUGGA----------GCAGCUCUCCAAGAC---AGAUGUGGAGAAACGGGUCGAGCACACAGCACUUGGGGCCUCAGGCGAAGACGUUGUAAUUGUGGGACAUCAGUCGUAC
+                           .--...)))))).----------.....((((((....---.....))))))....................(((.............)))..........((((.(((....))).)))
+
+                           )---..............((((..((((((.......))......))))))))............................................((((.((......))))))....
+NW_021705860.1:37802-39002 C---AGGAUGCUGAGCUACUACGUCACCCCACAGAACGUUGUGCUGGUGCUGGAGUUGUGUCCC--------------------------------UGUGGGACGCUUCUGCAG-AAGCU
+NW_021706144.1:1909-3022   U---CCGCUUCGCUGAU-GCGCUUCGUGUCAC----------UCUCGCGCUGCAUCACUGCCGAGGUCAUCUGCGC-------------------UUGGUUGGCGGUGUCGUAGCUAGUC
+NW_021705798.1:28511-29897 G---AACACGCGGCCGCGAGCAACCAGGCGACGCCACCGC---UUCCUUUGCUAGACACCGCGCUCUACUGCCUGCAUGAGACAGCAAAGACGAUUUGUGCGCGGCCUGCGGCGCCACUU
+NW_021705745.1:83190-84432 ACACCAGAUCUAUUGGUGCUCGCUACGGAAAAACUGAUU------CCGUUGAGGUUUCU-----------------------------------UUUUACGCGUGAUUCCGCCGUAUAUC
+                           ).................((((..((((((.......))------))))))))......-----------------------------------...((((.((......))))))....
+
+                           ........................................(((.(((..((.((.....(((.((((..........)))).)))..))...))))))))..........((((((.((.
+NW_021705860.1:37802-39002 GAGGGCAAU-GCCGCAAGGAAGGUUUGAUGAACGACGGGCGUCGCGGUA-------UGUGCGACAGGCCGCACGGGCGCUAGCGUAUCUG---CACGGACAU-GGCAUUGCCCACCGCGA
+NW_021706144.1:1909-3022   GUGGGCGGU-UCCCGCAGGAGGGCUUCGU----AGUGGGCGA--GAGUG-------CAGUCGAC-----------------GCGGCUCCA---C-UCGUCGA-GGGCGGGGUCAUCGUGG
+NW_021705798.1:28511-29897 GAGGAAAAUAUUACUGAGCAUAAUG--AAAACGGCGACCCCGCACCAAAGCAAGAUCAAGGCAGUUUCCA-------GAAUGGUUUUCUUACGCUGGUGAAUAGUUACACGUUGUGUUCG
+NW_021705745.1:83190-84432 G--------------------------------------CAAUGGCC-GACGGGAC--AAUGGAAAGC----AUGACUUUUACAUCACCAACGUGGCAUUGCCGGCA---ACUGAUUUA-
+                           .--------------------------------------.(((.(((-.((.((..--.(((.((((.----.....)))).)))..))...)))))))).......---((((((.((-
+
+                           ................((((((...)))))).......)).)))).)).........................................((..((--.((((.(((........))))))
+NW_021705860.1:37802-39002 CU-------UGAAACUAGAGAACGUUUUUUUAGAUGCGCGGGGUGUGGCAAGGCUGGGAGAUUUUGG----------------GUGGAGUAAGGC--CGUUGAGGAGC---------CGA
+NW_021706144.1:1909-3022   CUACAGAGAAGGAAGGCGUCCCCG-CGGAUGUCGCGCUGCACGAGCGUGCUGGCACGGGA----GUU----------------GAGGGCGAGGUC--CUUAAAGCGGCCACUGUCGUCGA
+NW_021705798.1:28511-29897 CUUCUGAGGUU---CUUUGCCGAGGAGGAGGAGGAGGGGGGGGAG-GUGGUGGUGGAAGCAAAAUGGAAUGAGGCGAAGCCAAGCGCUGGGGGAA--GGA--AGCG-----UGACGCAGC
+NW_021705745.1:83190-84432 ---------------UCCACCAGGCUGGUGG------CUAUAUCAAGUGGAGCCACCGUGACAAUUG------------------GGUCCUUGUCAUCUGGUAGUGUCACCCAUCGCAUC
+                           ---------------.((((((...))))))------.)).)))).))...................------------------....((..((...((((.(((........))))))
+
+                           ).))..))...-------...................((((..((...........(((.((.-...)).)))--.......))......(((((((...-----------.))))))).
+NW_021705860.1:37802-39002 CGGUGAAGCAC-------GAC----CCCGCCCCUCAUUCGGAC--------------AACUG-----------------CGGCACU------ACCUC--A-----------CACAGUGCG
+NW_021706144.1:1909-3022   UGUAGAGGGAA-------GUG----CCCACAAACC--UGUUGC--------------CGCGCC-CUGGCAUGA--GCAACGGUAUG------AUCUCGAA-----------GGAAGUCUG
+NW_021705798.1:28511-29897 CGACUCCUCAC-------UUCGAGAGGCGCCCUUGCGUUACACCACAGCAGUUCUUUACCAGU-UGUUUAGUA--UGAAACUUGGUCCACGUGCGCUAGA-----------GGGCGCAUU
+NW_021705745.1:83190-84432 GAGAGUAGCGAUCCUGUUGUGGAUAUCUGCUUUUCAGGAGGUCCACAUGAAGUAACUAUUGCCACGCGUAAUAAACUGACGGUGUACGAUUUACGCAAGACUGCUCAGUUUCUGUGUGAA
+                           ).))..)).............................((((..((...........(((.((.....)).))).........))......(((((((...............))))))).
+
+                           ...........((.......-----.............))))))...((.(((.....((((((((((...........((((...............))))....))))))))))....
+NW_021705860.1:37802-39002 GGCGGCGAUGAUGCGAAUGU-----GUGUGGUGGCGGCGGCCGGCUAACGGUGUGUGGCACGCUGGACU---------AUUUGU---------CCCCGGAAAUGCUGUCUGGCAUGCCUC
+NW_021706144.1:1909-3022   CUC--------CAGGUAGUC-----CU-CGAUCAUUGCG-----------------UGCUGCUGCUGCU---------CGCU--------------CGUGGCGGCGGCAGCGGCAGCAGC
+NW_021705798.1:28511-29897 GCCAUCCUUGUCAGCAUCAU-----CUUCGGUGCC-AAUGUCAUCUAUUAGCUCGUUUUUCGCCUUACUGUUUAAACGGGUGAUCGAUUAUUGCUCCUUCGCCGGUGUGAGGUGGAACCU
+NW_021705745.1:83190-84432 ACCUGUGACGAUGGCACCGUAGACAUCACAACGUUUGCCACCUCCGACUCUGCCUUGGCUGUAGGGUCUAAAAGCGGUAUUGUUAAUAUUU-------ACAACAAGGGCUCUGCAGGACC
+                           ...........((.........................))))))...((.(((.....((((((((((...........((((........-------))))....))))))))))....
+
+                           .))).))........................(((((...............))).))((((((......)))))).........................((..(((.(((((...((..
+NW_021705860.1:37802-39002 ACACCUUUA-----------------AGACUGAU---GUGUGGUC-UCUUGGUGU-CAUGCUCGCG---GAG-AUGC-----------------------UCACCGGCGCGCCCCC----
+NW_021706144.1:1909-3022   AGCGUCUCC-----------------CUGCUGCUUCGCCUCCUUCAUCUUCGCCG-UGAGGUGUCGCGCCAUCUCG----------------------------CGCCGCUGAUCC----
+NW_021705798.1:28511-29897 CUACUAUGAGGUGGGAGUGGAAGCGGCGCAGAAGGCGCUUGCCUACGCCCCGCCCUUGCUGCGAGAGACGGCAGCGCUACUCGUGUCCUAUUGCCGCCAAUUCCCUCCGCUGUAUCAGUC
+NW_021705745.1:83190-84432 CGCGAAG----------------------ACUCUCA---------AGAACCUGACGACAAGCAUCA-AUUGUUUGGC----------------------AUUUGGAGAACGCAGCAACGG
+                           .))).))----------------------..(((((---------......))).))((((((...-..))))))..----------------------.((..(((.(((((...((..
+
+                           .---...))...))))).))).....))......((.(((....................(((....(((((..((----------........(((((...)))))...)).....)))
+NW_021705860.1:37802-39002 -----CUUUUACUGCGUGUCACACCAGGGCACCCUCGA-CGCAAUUCGCGAGGCGGACCCUCACUUGGGC-GACGA----------CGUUC-AUAUC-------------UCAUCACUGG
+NW_021706144.1:1909-3022   -----UCGGAAAGCAGCUGCCGGCGAAAGUACUGCUGG-AGGGAGGCGCGAAACUCCUCAUCGCUGCCGCCGGCAA----------ACGUC-AUCUCGCGCGGCGCGGCGUUGUCGUCGG
+NW_021705798.1:28511-29897 G---GUUCUGAAGCAGGUGGGGGCGGAGGCUCACUUUAUCCUGGAUCAGCUGGUGCACUCGAAGUUGUUUCACUUU----------CCAUCGAGCUCCCACGAGGAGAUGGAGAUG---G
+NW_021705745.1:83190-84432 UGACGCGGUGCUUGCGUACUCGACCAAGGCCCAGAAGGGUGGAUUUCGUCUCGC---CGUGCUCCCAGAGUGCCGUGUCGUGCCGUCCUUUCCUGCUGUUUCGCAGCGUCACCAGUUUAU
+                           .......))...))))).))).....))......((.(((..............---...(((....(((((..((..................(((((...)))))...)).....)))
+
+                           ))..)))...............))).))..........................((.(((.(((((....--...))))).))))).............................
+NW_021705860.1:37802-39002 CCCGUGAAUUGGUGCUGACAAUGCUGCAGAAGGACCCGGACGCGCGUCCAACAAUGGCAGAGGUGCUG-----CAACACCCAUGGACGAGACCACACCGGGAGAAGGCGAAGUAA
+NW_021706144.1:1909-3022   CGG--GAAUCAGCACAUAC----CGGAAGAAGUUCACUGUGGGGCCUUGACCACUCAUCGCGUGCCUUGC--CUGGGCGCACGGGAU-------------------------CAU
+NW_021705798.1:28511-29897 AACGUUACGUGUU-----CUAUGAUAAAAAAAGCAGGACGACGACGACGAACGACGACGGCGGCGACGGC--AAUGCACCACGAGGCGGCAGCCAAGCGUGA-------------
+NW_021705745.1:83190-84432 UCAGAGUUUGGCCUUUGCCCCAACCGUUC------------------------CUGUGCUUUCUGUCGGUGAAAAGCAGAAGGUCACGA------------ACUACGCGUUGUGA
+                           ))..)))...............))).)).------------------------.((.(((.(((((.........))))).)))))...------------..............
+                           .....................................................((((........(((..((...............))....)))............--..........
+NW_021705860.1:37802-39002 AUGUGGCAGCUU---CACAACGUGCGCUUGCCGCCGCG-----------------GAGGUUGUGUGACGCAAAGCC----------GUUGA--UGUCACC--------------------
+NW_021706144.1:1909-3022   UUAGGCAAAAAG---UUUGGAGAACUU-CUGCUUC-----------------------------UGCUCCUUCCGG----------AGGGC--AGCUGCCCCCUCAG-------------
+NW_021705798.1:28511-29897 AUGGUGUGCAGAAACGGCAAUGCCUCCUCACAAUUUAGCGUCUCCUCCAUACAGCAGGAACGUGAGCUGCCGCAGCAACAGCAACAGCGGC--AGCAGCAACAACAGG--C---------
+NW_021705745.1:83190-84432 AU-GGCGUCUCGUGCUUGGGUGGACG--AUGCAGAUCACAACGCGGGUGAGGAGCUGCCAGGUUUUGUGAAGCAG---UCUCAUGUGCUUCCCGCAUGGGCCACCACG--UCCACGCAUG
+NW_021706084.1:17102-18440 CUA-------------------------CUCCAUCUCUCCAAGAAUCCAGGGGUGCUGCAUGAGCUCCUCCACGGU----UGGACGCUGCCCCGGAUCUCGCACAAAGCACCUACGCAUA
+                           ...-------------------------.........................((((........(((..((....----.......))....)))........................
+
+                           .......))))..((((((.....(((......)))...............)))))).................................((((......))))............(((.
+NW_021705860.1:37802-39002 ------AUUACAGGGGGGGUACACGCGAGGUGACGCGUGUCAC---------UCUUCUUUUG-----------CAGGUGGCGGACACGAAGACGCGUCGGAGUCGGAGCCAAACUCGCAG
+NW_021706144.1:1909-3022   ----CGAUGGCCUGGCGG----------AUGGCUGCGACGUCA---------CUGGCGGGCC-----------CGCCCAGCUG-CUCAAAGGCGU-UCAGCGCC---------------U
+NW_021705798.1:28511-29897 CGCACUGUUUGGUUUGGAGCACCUUAUGACGGCCACGUAUCCGCCACCUAGCUUCGAGCCGAGCC----GCACAGUGCUGCUGC------GACGCAAGGUCGACGUCAUUAACUGCAUCA
+NW_021705745.1:83190-84432 CAGACCGCAGCGUUAUUGGC------------------------------GACAAUGGUGCAGCCAGAAGUGAGGUCGUCGUCUCUUCCUCAUCCGCACUGAUGAUGACAGCCCAAAAAA
+NW_021706084.1:17102-18440 AAAUCCAGGCACCCCGGCGUCGCCUCCGCCUCCGGAAUCUC----------UGUCGGUC--------------CGUCCUUCGCCUGCGCAAUCAUCA---UGAUGGCAGCGGGCGCGUUC
+                           .......))))..((((((.....(((......))).....----------))))))..--------------.................((((...---))))............(((.
+
+                           .....................)))....................................((..((.(((((...........)))))-.))..)).......---..............
+NW_021705860.1:37802-39002 GC--GUCAUUGCAG----GCCUGCUUUGUCGCACCGCAGCCAUGCACGUCAUC--CUCACCGGUUGAAGCGGCGUCGCAGGAAUCGCU-GCAACCGCAGAAGC---AGCCGCCGCAAGAG
+NW_021706144.1:1909-3022   CC--GCCGCUGCGGCGUAGUCACGUCCGCCGCAAAGGGCGACUGCCAGUCGAU--GGUGGGCCUUGAGGUUC-GUGGCAUC--GAGCU-GCAGGGC-AGCCCG---UGCGUCCGCAGCGG
+NW_021705798.1:28511-29897 CCAAGCGAAUUCGGCGUAUCAGUGAGGGCCUCACAGUUGGCAGUUUCUCCUUCAAAAACCGGCGUG-CGCUGGCCCACA----CAGUC-GUACGCAGUGCACU---UCAGGCCGCCUA--
+NW_021705745.1:83190-84432 ------------GAUUUCGUGAUAAGGACCU-GGACGAACUUCUCGCGCGGACGGAGCCACUUUUGACGUCG------AAGCACGACC-GCAAGCA----------UGCUGCUCUUCCAC
+NW_021706084.1:17102-18440 AC-----------------CUGACUCGGCCACG-------------------------GUGGCUUGCCUGUGAGCAUCUCAGCCACGGUGCACCCCACGGACCAAACAUCGGCCUUGUAG
+                           ..-----------------..))).........-------------------------..((..((.(((((...........)))))..))..))........................
+
+                           ...........((((....................)))).........((((((.(((----(((((.((.(((((---------------(((....((((((((........))))..
+NW_021705860.1:37802-39002 CAGCAACAACUUGUCA----UUCGACA--GGA--AGACAUACGGGACGAGGACUUUCA----GCGGCUAGAGGUGU---------------UGGGUGAUGGUUCAUACUCUGUUGUGGUU
+NW_021706144.1:1909-3022   CGGCUUCGUUUUUGC-----CGAGACGGUGGU--GGCAA---AGGCUGCGGUUGAGCA----GUGCGGAGAGUCGC---------------AG---------CGCAG---UGACUGCGGC
+NW_021705798.1:28511-29897 ---CCACAAUUGCCGU----CGAGACAUCUUU--GUGGCCUC------CUCAUUUGAU----GCGGCUGAGGGGGU-----------------GCCUGUGUACAGCGACACCAUCGCGGG
+NW_021705745.1:83190-84432 CUGUCCUUUCCGUGCUUCCCCUUCCUCGUGAUUCUGCAC---GGACGGUUCAGUGGCA----UCGCAACGGGCAGC---------------UGGCAGUGGUAGGUGGCAACCACCACUUG
+NW_021706084.1:17102-18440 CUGUACCCUUCGCCGCUGC----------------CGGUCACGUCUACCACCUCCGGCGCCAUCCAGUAU-GGGGUGCCAAUAACGGUCCGGCUCUGUGCCACGGCGUCCGAGAGUCGUC
+                           ...........((((....----------------)))).........((((((.(((....(((((.((-(((((...............(((....((((((((........))))..
+
+                           ))))................)))----------))))).)).)))))..))).))))))...(((..((..((....))..))..)))...............((((......))))...
+NW_021705860.1:37802-39002 GCCGCCCGUCAUUUGCCGACCCA----------GCAG--CUGGUUGCACUGAAGGAACUCUCGCGACGACGCCUGAAGGAGUUGGAGC--UGGAGAAUCAGUUGCAGUGGGAGA---UCA
+NW_021706144.1:1909-3022   CUCGUUCGGCA--GGAGGUCCCU----------GCGGCCCUCCGUG---AGUUCGACGGC-CUCGUCGUAGGCC----UUCACGGCCGCCUUGAAAUCACCGGCGGUGAAAAAGCUGUUA
+NW_021705798.1:28511-29897 GGCGUU---------UCUCUGCA----------ACACCGUCAAUUCCGCCGACCCAGUGCUUUACGCGUCGG------------------------UCCUGUCAAGCUUCGUUGCUUACG
+NW_021705745.1:83190-84432 UACCUUUUCCA----UGCAGCCG----------GCA--AGUUUGUGGA----------GCAGCUCUCCAAGAC---AGAUGUGGAGAAACGGGUCGAGCACACAGCACUUGGGGCCUCAG
+NW_021706084.1:17102-18440 UGGCCGCGCCAAAGUCCACAAGUUUAAUUUGCGACUCCAGUUUUGGAUCGCUUGAGGUGUCUACAAGAA-GGUUAUCGCCCUUGAUGUCGCGGUGUAUAAUGCCCUGCGUGUGCAGGUAA
+                           ))))................)))..........))))).)).)))))..))).))))))...(((..((-.((....))..))..)))...............((((......))))...
+
+                           ....................((((....)))).......................(((..----.((((.......))......)).)))...((((((-((((...((...........
+NW_021705860.1:37802-39002 ACGUUCACCGUACGCUGCGCCAUCCCAACGUGGU-C---AGGAUGCUGAGCUACUACGUC----ACCCCACAGAACGUUGUGCUGGUGCUGGAGUUGUG-UCCC----------------
+NW_021706144.1:1909-3022   CCGUUCACCU--UCGCCUGCUGUGCCUUCGCGGUAU---CCGCUUCGCUGAU-GCGCUUC----GUGUCAC----------UCUCGCGCUGCAUCACUG-CCGAGGUCAUCUGCGC----
+NW_021705798.1:28511-29897 GUGUGGACUUCGCUGCGCCGCGUCACAGUGCGGGUG---AACACGCGGCCGCGAGCAACC----AGGCGACGCCACCGC---UUCCUUUGCUAGACACC-GCGCUCUACUGCCUGCAUGA
+NW_021705745.1:83190-84432 GCGAAGACGUUGUAAUUGUGGGACAUCAGUCGUACACACCAGAUCUAUUGGUGCUCGCUA----CGGAAAAACUGAUU------CCGUUGAGGUUUCU----------------------
+NW_021706084.1:17102-18440 A-GCAGACCCUUGAGCAGCUGCUGGGUCCAGCUUCGCACCACGGCAGGAUGCAAUGGUUUAAAAACUUU-CACUAAAGAGGACAAGGGCCCACCACCGAUGUAUUCCAU-----------
+                           .-..................((((....)))).......................(((.......((((-......))......)).)))...((((((.((((...((-----------
+
+                           ................)).))))))))))............((((......))))...................((....))..((............(((..((((..........)))
+NW_021705860.1:37802-39002 ----------------UGUGGGACGCUUCUGCAG-AAGCUGAGGGCAAU-GCCGCAAGGAAGGUUUGAUGAACGACGGGCGUCGCGGUA-------UGUGCGACAGGCCGCACGGGCGCU
+NW_021706144.1:1909-3022   ---------------UUGGUUGGCGGUGUCGUAGCUAGUCGUGGGCGGU-UCCCGCAGGAGGGCUUCGU----AGUGGGCGA--GAGUG-------CAGUCGAC----------------
+NW_021705798.1:28511-29897 GACAGCAAAGACGAUUUGUGCGCGGCCUGCGGCGCCACUUGAGGAAAAUAUUACUGAGCAUAAUG--AAAACGGCGACCCCGCACCAAAGCAAGAUCAAGGCAGUUUCCA-------GAA
+NW_021705745.1:83190-84432 --------------UUUUACGCGUGAUUCCGCCGUAUAUCG--------------------------------------CAAUGGCC-GACGGGAC--AAUGGAAAGC----AUGACUUU
+NW_021706084.1:17102-18440 ---AAACAUACAAAUGGUGGUACUCGGUGAAUCGUAGCACACACCCUUAAAGGUGCAG---AGAUUCUUGUGAUGCAGACGCCGCAUAAU--------GUUAAUCUCCCGCGACAGGGAG
+                           ---.............)).))))))))))............((((......))))...---.............((....))..((....--------(((..((((..........)))
+
+                           )..))).........))...............((((.((...............((((.(((-------------...))).)))).....--)).))))....................
+NW_021705860.1:37802-39002 AGCGUAUCUG---CACGGACAU-GGCAUUGCCCACCGCGACU-------UGAAACUAGAGAA-------------CGUUUUUUUAGAUGCG--CGGGGUGUGGCAAGGCUGGGAGAUUUU
+NW_021706144.1:1909-3022   -GCGGCUCCA---C-UCGUCGA-GGGCGGGGUCAUCGUGGCUACAGAGAAGGAAGGCGUCCC-------------CG-CGGAUGUCGCGCU--GCACGAGCGUGCUGGCACGGGA----G
+NW_021705798.1:28511-29897 UGGUUUUCUUACGCUGGUGAAUAGUUACACGUUGUGUUCGCUUCUGAGGUU---CUUUGCCG-------------AGGAGGAGGAGGAGGG--GGGGGAG-GUGGUGGUGGAAGCAAAAU
+NW_021705745.1:83190-84432 UACAUCACCAACGUGGCAUUGCCGGCA---ACUGAUUUA----------------UCCACCA-------------GGCUGGUGG------C--UAUAUCAAGUGGAGCCACCGUGACAAU
+NW_021706084.1:17102-18440 ACAAGCUC-----CUUGACACUGAAUACACCUGUUUUCUUCCCAAUCUCCACACACUUCACGGCGUAGAAAGAGCCAUCGUUGAGUAAACCCAAGUAAACAGAGCCGUAUGUCCCACGGC
+                           )..)))..-----..))...............((((.((...............((((.(((................))).)))).......)).))))....................
+
+                           ..................(((((..........................------...............................))))).............................
+NW_021705860.1:37802-39002 GG----------------GUGGAGUAAGGC--CGUUGAGGAGC---------------CGACGGUGAAGCAC-------GAC----CCCGCCCCUCAUUCGGAC--------------AA
+NW_021706144.1:1909-3022   UU----------------GAGGGCGAGGUC--CUUAAAGCGGCCACUGU------CGUCGAUGUAGAGGGAA-------GUG----CCCACAAACC--UGUUGC--------------CG
+NW_021705798.1:28511-29897 GGAAUGAGGCGAAGCCAAGCGCUGGGGGAA--GGA--AGCG-----UGA------CGCAGCCGACUCCUCAC-------UUCGAGAGGCGCCCUUGCGUUACACCACAGCAGUUCUUUAC
+NW_021705745.1:83190-84432 UG------------------GGUCCUUGUCAUCUGGUAGUGUCACCCAU------CGCAUCGAGAGUAGCGAUCCUGUUGUGGAUAUCUGCUUUUCAGGAGGUCCACAUGAAGUAACUAU
+NW_021706084.1:17102-18440 CAAUCAACAGACCACGACGCCACGAUCGGAGCACAGGUGCGUCGCUCGUUUGCAGCAUCUCCGGAGUGAUGCCCUCUGGGCUCAGUGUGGCCCACGA--------ACUAUAUCUUUCCUC
+                           ..................(((((...............................................................)))))......--------...............
+
+                           ........................(((..........................(((...((..((....)).-))....)))............)))...............(((((...
+NW_021705860.1:37802-39002 CUG-----------------CGGCACU------ACCUC--A-----------CACAGUGCGGGCGGCGAUGA-UGCGAAUGU-----GUGUGGUGGCGGCGGCCGGCUAACGGUGUGUGG
+NW_021706144.1:1909-3022   CGCC-CUGGCAUGA--GCAACGGUAUG------AUCUCGAA-----------GGAAGUCUGCUC---------CAGGUAGUC-----CU-CGAUCAUUGCG-----------------UG
+NW_021705798.1:28511-29897 CAGU-UGUUUAGUA--UGAAACUUGGUCCACGUGCGCUAGA-----------GGGCGCAUUGCCAUCCUUGU-CAGCAUCAU-----CUUCGGUGCC-AAUGUCAUCUAUUAGCUCGUUU
+NW_021705745.1:83190-84432 UGCCACGCGUAAUAAACUGACGGUGUACGAUUUACGCAAGACUGCUCAGUUUCUGUGUGAAACCUGUGACGA-UGGCACCGUAGACAUCACAACGUUUGCCACCUCCGACUCUGCCUUGG
+NW_021706084.1:17102-18440 CUCCUCCGGCGUCACGCGAAUCGUGCUGUCGUCA-------------------GCUGCAACGUCUUGCAGGUCGUCGUCAGUUUUCAU--CGGCAGCUGUGGCAAUGAAAUGGUCGAGGG
+                           ........................(((.......-------------------(((...((..((....))..))....)))......--....)))...............(((((...
+
+                           (((((((((........((.(((...................))).)).)))))))))...)))))......................................................
+NW_021705860.1:37802-39002 CACGCUGGACU---------AUUUGU---------CCCCGGAAAUGCUGUCUGGCAUGCCUCACACCUUUA-----------------AGACUGAU---GUGUGGUC-UCUUGGUGU-CA
+NW_021706144.1:1909-3022   CUGCUGCUGCU---------CGCU--------------CGUGGCGGCGGCAGCGGCAGCAGCAGCGUCUCC-----------------CUGCUGCUUCGCCUCCUUCAUCUUCGCCG-UG
+NW_021705798.1:28511-29897 UUCGCCUUACUGUUUAAACGGGUGAUCGAUUAUUGCUCCUUCGCCGGUGUGAGGUGGAACCUCUACUAUGAGGUGGGAGUGGAAGCGGCGCAGAAGGCGCUUGCCUACGCCCCGCCCUUG
+NW_021705745.1:83190-84432 CUGUAGGGUCUAAAAGCGGUAUUGUUAAUAUUU-------ACAACAAGGGCUCUGCAGGACCCGCGAAG----------------------ACUCUCA---------AGAACCUGACGAC
+NW_021706084.1:17102-18440 UUGUGGUGAU-------ACGGCAG-----------CCUUUGGUGCUGUCUCGCCAUAG---UCGAC-----------------------------------------------------A
+                           (((((((((.-------((.(((.-----------.......))).)).)))))))))---)))))-----------------------------------------------------.
+
+                           .((((......))))....................................................((((....(((..........................................
+NW_021705860.1:37802-39002 UGCUCGCG---GAG-AUGC-----------------------UCACCGGCGCGCCCCC---------CUUUUACUGCGUGUCACACCAGGGCACCCUCGA-CGCAAUUCGCGAGGCGGAC
+NW_021706144.1:1909-3022   AGGUGUCGCGCCAUCUCG----------------------------CGCCGCUGAUCC---------UCGGAAAGCAGCUGCCGGCGAAAGUACUGCUGG-AGGGAGGCGCGAAACUCCU
+NW_021705798.1:28511-29897 CUGCGAGAGACGGCAGCGCUACUCGUGUCCUAUUGCCGCCAAUUCCCUCCGCUGUAUCAGUCG---GUUCUGAAGCAGGUGGGGGCGGAGGCUCACUUUAUCCUGGAUCAGCUGGUGCAC
+NW_021705745.1:83190-84432 AAGCAUCA-AUUGUUUGGC----------------------AUUUGGAGAACGCAGCAACGGUGACGCGGUGCUUGCGUACUCGACCAAGGCCCAGAAGGGUGGAUUUCGUCUCGC---C
+NW_021706084.1:17102-18440 ACACUGC---UAGUGCGGUUGCCGUCGCCACCGUCUUUGCUACCCUCUCCUCCCUCGCGGAAGGUCCCUGUGGUGUCAAGGCCGCCC----CUCAAUGGAGUGCGUCUAUCGUUAACGGA
+                           .((((..---.))))....................................................((((....(((.........----.............................
+
+                           ....((...((((...............((.((...(((....)))-..)).)).......)))).))................)))....))))...............(((....)))
+NW_021705860.1:37802-39002 CCUCACUUGGGC-GACGA----------CGUUC-AUAUC--------------UCAUCACUGGCCCGUGAAUUGGUGCUGACAAUGCUGCAGAAGGACCCGGACGCGCGUCCAACAAUGG
+NW_021706144.1:1909-3022   CAUCGCUGCCGCCGGCAA----------ACGUC-AUCUCGCGCGGC-GCGGCGUUGUCGUCGGCGG--GAAUCAGCACAUAC----CGGAAGAAGUUCACUGUGGGGCCUUGACCACUCA
+NW_021705798.1:28511-29897 UCGAAGUUGUUUCACUUU----------CCAUCGAGCUCCCACGAG-GAGAUGGAGAUG---GAACGUUACGUGUU-----CUAUGAUAAAAAAAGCAGGACGACGACGACGAACGACGA
+NW_021705745.1:83190-84432 GUGCUCCCAGAGUGCCGUGUCGUGCCGUCCUUUCCUGCUGUUUCGC-AGCGUCACCAGUUUAUUCAGAGUUUGGCCUUUGCCCCAACCGUUC------------------------CUGU
+NW_021706084.1:17102-18440 GCACCUCGUCUCU-------UUUCGCCCGCCCGAAAAAGAUUUCUUCUUCGUGCCACACCUGGAGCAGAACUUCGCCGUUAACUUGAUGAAAUGGGCACCGCAGUGGUGACACAUCUGUG
+                           ....((...((((-------........((.((...(((....)))...)).)).......)))).))................)))....))))...............(((....)))
+
+                           ...-.......................................................
+NW_021705860.1:37802-39002 CAG-AGGUGCUG-----CAACACCCAUGGACGAGACCACACCGGGAGAAGGCGAAGUAA
+NW_021706144.1:1909-3022   UCG-CGUGCCUUGC--CUGGGCGCACGGGAU-------------------------CAU
+NW_021705798.1:28511-29897 CGG-CGGCGACGGC--AAUGCACCACGAGGCGGCAGCCAAGCGUGA-------------
+NW_021705745.1:83190-84432 GCU-UUCUGUCGGUGAAAAGCAGAAGGUCACGA------------ACUACGCGUUGUGA
+NW_021706084.1:17102-18440 CCUCCGCCGCCUGCUUUUUGCAGCCAACGAUGCCCUCCGA----------------CAU
+                           ........................................----------------...
+                           ........................................................................................((...((((((-....................
+NW_021705860.1:37802-39002 AUGUGGCAGCUU---CACAACGUGCGCUUGCCGCCGCG-----------------GAGGUUGUGUGACGCAAAGCC----------GUUGA--UGUCAC-C-------------------
+NW_021706144.1:1909-3022   UUAGGCAAAAAG---UUUGGAGAACUU-CUGCUUC-----------------------------UGCUCCUUCCGG----------AGGGC--AGCUGC-CCCCUCAG------------
+NW_021705798.1:28511-29897 AUGGUGUGCAGAAACGGCAAUGCCUCCUCACAAUUUAGCGUCUCCUCCAUACAGCAGGAACGUGAGCUGCCGCAGCAACAGCAACAGCGGC--AGCAGC-AACAACAGG--C--------
+NW_021705745.1:83190-84432 AU-GGCGUCUCGUGCUUGGGUGGACG--AUGCAGAUCACAACGCGGGUGAGGAGCUGCCAGGUUUUGUGAAGCAG---UCUCAUGUGCUUCCCGCAUGG-GCCACCACG--UCCACGCAU
+NW_021706084.1:17102-18440 CUA-------------------------CUCCAUCUCUCCAAGAAUCCAGGGGUGCUGCAUGAGCUCCUCCACGGU----UGGACGCUGCCCCGGAUCU-CGCACAAAGCACCUACGCAU
+NW_021705786.1:5861-6767   UCAAAACUCC---------------------------------------------------------------------AAGGAGAAGUAUGGGUGCUCAAGCGCCUGAGCAGCUGUUAG
+                           ..........---------------------------------------------------------------------.........((...((((((.....................
+
+                           .......(((((((((........................................)))))))))............))))))..)).................................
+NW_021705860.1:37802-39002 -------AUUACAGGGGGGGUACACGCGAGGUGACGCGUGUCAC---------UCUUCUUUUG-----------CAGGUGGCGGACACGAAGACGCGUCGGAGUCGGAGCCAAACUCGCA
+NW_021706144.1:1909-3022   -----CGAUGGCCUGGCGG----------AUGGCUGCGACGUCA---------CUGGCGGGCC-----------CGCCCAGCUG-CUCAAAGGCGU-UCAGCGCC---------------
+NW_021705798.1:28511-29897 -CGCACUGUUUGGUUUGGAGCACCUUAUGACGGCCACGUAUCCGCCACCUAGCUUCGAGCCGAGCC----GCACAGUGCUGCUGC------GACGCAAGGUCGACGUCAUUAACUGCAUC
+NW_021705745.1:83190-84432 GCAGACCGCAGCGUUAUUGGC------------------------------GACAAUGGUGCAGCCAGAAGUGAGGUCGUCGUCUCUUCCUCAUCCGCACUGAUGAUGACAGCCCAAAAA
+NW_021706084.1:17102-18440 AAAAUCCAGGCACCCCGGCGUCGCCUCCGCCUCCGGAAUCUC----------UGUCGGUC--------------CGUCCUUCGCCUGCGCAAUCAUCA---UGAUGGCAGCGGGCGCGUU
+NW_021705786.1:5861-6767   GCGUUCGCUGGGCUCGU-----ACUUCAGCAGGCGCCGAAGGAGAUCAAUACCCUCCGGGCCCAGCUUCGCGUACGCGGGCACGGUGCGAAA----------------------------
+                           .......(((((((((.-----..................................)))))))))............))))))..)).....----------------------------
+
+                           ...............................................................((((.(((((...........)))))..)))).........................
+NW_021705860.1:37802-39002 GGC--GUCAUUGCAG----GCCUGCUUUGUCGCACCGCAGCCAUGCACGUCAUC--CUCACCGGUUGAAGCGGCGUCGCAGGAAUCGCU-GCAACCGCAGAAGC---AGCCGCCGCAAGA
+NW_021706144.1:1909-3022   UCC--GCCGCUGCGGCGUAGUCACGUCCGCCGCAAAGGGCGACUGCCAGUCGAU--GGUGGGCCUUGAGGUUC-GUGGCAUC--GAGCU-GCAGGGC-AGCCCG---UGCGUCCGCAGCG
+NW_021705798.1:28511-29897 ACCAAGCGAAUUCGGCGUAUCAGUGAGGGCCUCACAGUUGGCAGUUUCUCCUUCAAAAACCGGCGUG-CGCUGGCCCACA----CAGUC-GUACGCAGUGCACU---UCAGGCCGCCUA-
+NW_021705745.1:83190-84432 A------------GAUUUCGUGAUAAGGACCU-GGACGAACUUCUCGCGCGGACGGAGCCACUUUUGACGUCG------AAGCACGACC-GCAAGCA----------UGCUGCUCUUCCA
+NW_021706084.1:17102-18440 CAC-----------------CUGACUCGGCCACG-------------------------GUGGCUUGCCUGUGAGCAUCUCAGCCACGGUGCACCCCACGGACCAAACAUCGGCCUUGUA
+NW_021705786.1:5861-6767   -------------------------------------------------------------CUGAACGUCGCACUCCGC-----UGCGA-GGUUCUGCAGGAACUCGGG-----------
+                           -------------------------------------------------------------..((((.(((((......-----)))))-.))))..............-----------
+
+                           ............((((....................))))..........((((((........(((((((.-(((((......................((((-((((........)))
+NW_021705860.1:37802-39002 GCAGCAACAACUUGUCA----UUCGACA--GGA--AGACAUACGGGACGAGGACUUUCA----GCGGCUAGA-GGUGU---------------UGGGUGAUGGU-UCAUACUCUGUUGUG
+NW_021706144.1:1909-3022   GCGGCUUCGUUUUUGC-----CGAGACGGUGGU--GGCAA---AGGCUGCGGUUGAGCA----GUGCGGAGA-GUCGC---------------AG----------CGCAG---UGACUGC
+NW_021705798.1:28511-29897 ----CCACAAUUGCCGU----CGAGACAUCUUU--GUGGCCUC------CUCAUUUGAU----GCGGCUGAG-GGGGU-----------------GCCUGUGUA-CAGCGACACCAUCGC
+NW_021705745.1:83190-84432 CCUGUCCUUUCCGUGCUUCCCCUUCCUCGUGAUUCUGCAC---GGACGGUUCAGUGGCA----UCGCAACGG-GCAGC---------------UGGCAGUGGUA-GGUGGCAACCACCAC
+NW_021706084.1:17102-18440 GCUGUACCCUUCGCCGCUGC----------------CGGUCACGUCUACCACCUCCGGCGCCAUCCAGUAU--GGGGUGCCAAUAACGGUCCGGCUCUGUGCCA-CGGCGUCCGAGAGUC
+NW_021705786.1:5861-6767   ------------CUUCGACAACAUGUUGGUGGAGUUGGGGUACUGGUUCAUGGAAGGCCACACCUGGUUGUUCGGCGUUCCCAGAAAACGAAA-------AAUGCGCAGCAACUGAUCUG
+                           ------------((((....................))))..........((((((........(((((((..(((((...............-------((((.((((........)))
+
+                           )..)))).............................))))).)))))))......)))))).............................................((((......))))
+NW_021705860.1:37802-39002 GUUGCCGCCCGUCAUUUGCCGACCCA----------GCAG--CUGGUUGCACUGAAGGAACUCUCGCGACGACGCCUGAAGGAGUUGGAGC--UGGAGAAUCAGUUGCAGUGGGAGA---
+NW_021706144.1:1909-3022   GGCCUCGUUCGGCA--GGAGGUCCCU----------GCGGCCCUCCGUG---AGUUCGACGGC-CUCGUCGUAGGCC----UUCACGGCCGCCUUGAAAUCACCGGCGGUGAAAAAGCUG
+NW_021705798.1:28511-29897 GGGGGCGUU---------UCUCUGCA----------ACACCGUCAAUUCCGCCGACCCAGUGCUUUACGCGUCGG------------------------UCCUGUCAAGCUUCGUUGCUU
+NW_021705745.1:83190-84432 UUGUACCUUUUCCA----UGCAGCCG----------GCA--AGUUUGUGGA----------GCAGCUCUCCAAGAC---AGAUGUGGAGAAACGGGUCGAGCACACAGCACUUGGGGCCU
+NW_021706084.1:17102-18440 GUCUGGCCGCGCCAAAGUCCACAAGUUUAAUUUGCGACUCCAGUUUUGGAUCGCUUGAGGUGUCUACAAGAA-GGUUAUCGCCCUUGAUGUCGCGGUGUAUAAUGCCCUGCGUGUGCAGG
+NW_021705786.1:5861-6767   CGUCAUUUUUUCCAGCG----------AAUAGUGGGGCGCCAAUGGCCA------UUUCCG-----------------------------CAAAGAUACACCCGACGGACCAUAU-GUCU
+                           )..))))..........----------.........))))).)))))))------))))))-----------------------------................((((.....-))))
+
+                           ...................(((((.((....)).)))))....................................................(((....(((..(((..............
+NW_021705860.1:37802-39002 UCAACGUUCACCGUACGCUGCGCCAUCCCAACGUGGU-C---AGGAUGCUGAGCUACUACGUC----ACCCCACAGAACGUUGUGCUGGUGCUGGAGUUGUG-UCCC-------------
+NW_021706144.1:1909-3022   UUACCGUUCACCU--UCGCCUGCUGUGCCUUCGCGGUAU---CCGCUUCGCUGAU-GCGCUUC----GUGUCAC----------UCUCGCGCUGCAUCACUG-CCGAGGUCAUCUGCGC-
+NW_021705798.1:28511-29897 ACGGUGUGGACUUCGCUGCGCCGCGUCACAGUGCGGGUG---AACACGCGGCCGCGAGCAACC----AGGCGACGCCACCGC---UUCCUUUGCUAGACACC-GCGCUCUACUGCCUGCA
+NW_021705745.1:83190-84432 CAGGCGAAGACGUUGUAAUUGUGGGACAUCAGUCGUACACACCAGAUCUAUUGGUGCUCGCUA----CGGAAAAACUGAUU------CCGUUGAGGUUUCU-------------------
+NW_021706084.1:17102-18440 UAAA-GCAGACCCUUGAGCAGCUGCUGGGUCCAGCUUCGCACCACGGCAGGAUGCAAUGGUUUAAAAACUUU-CACUAAAGAGGACAAGGGCCCACCACCGAUGUAUUCCAU--------
+NW_021705786.1:5861-6767   ACAGG------CGUGCCAUACUGUGUGGAGCCAAGCAGUACA--------------------------------------------UCCGGGGAGCGGUACCAGAGCGUCACCAC-----
+                           .....------........(((((.((....)).)))))...--------------------------------------------.....(((....(((..(((.........-----
+
+                           .......................)))---.)))....)))....((.................))..((((...............(((.(((.....((.....(((.((((.......
+NW_021705860.1:37802-39002 -------------------UGUGGGA---CGCUUCUGCAG-AAGCUGAGGGCAAU-GCCGCAAGGAAGGUUUGAUGAACGACGGGCGUCGCGGUA-------UGUGCGACAGGCCGCACG
+NW_021706144.1:1909-3022   ------------------UUGGUUGG---CGGUGUCGUAGCUAGUCGUGGGCGGU-UCCCGCAGGAGGGCUUCGU----AGUGGGCGA--GAGUG-------CAGUCGAC----------
+NW_021705798.1:28511-29897 UGAGACAGCAAAGACGAUUUGUGCGC---GGCCUGCGGCGCCACUUGAGGAAAAUAUUACUGAGCAUAAUG--AAAACGGCGACCCCGCACCAAAGCAAGAUCAAGGCAGUUUCCA----
+NW_021705745.1:83190-84432 -----------------UUUUACGCG---UGAUUCCGCCGUAUAUCG--------------------------------------CAAUGGCC-GACGGGAC--AAUGGAAAGC----AU
+NW_021706084.1:17102-18440 ------AAACAUACAAAUGGUGGUAC---UCGGUGAAUCGUAGCACACACCCUUAAAGGUGCAG---AGAUUCUUGUGAUGCAGACGCCGCAUAAU--------GUUAAUCUCCCGCGAC
+NW_021705786.1:5861-6767   -----------------------CUCAUGCGUAAACUUCUUAACGGGAAUGCCAAACGCCCGCCCCAGGCCA--------------AAGUCCGC-CAGCUUCACAUUCUUCUCACGC---
+                           -----------------------)))....)))....)))....((.................))..((((.--------------(((.(((.-...((.....(((.((((....---
+
+                           ...)))).)))..)).....)))))).........)))).................................................................................
+NW_021705860.1:37802-39002 GGCGCUAGCGUAUCUG---CACGGACAU-GGCAUUGCCCACCGCGACU-------UGAAACUAGAGAA-------------CGUUUUUUUAGAUGCG--CGGGGUGUGGCAAGGCUGGGA
+NW_021706144.1:1909-3022   -------GCGGCUCCA---C-UCGUCGA-GGGCGGGGUCAUCGUGGCUACAGAGAAGGAAGGCGUCCC-------------CG-CGGAUGUCGCGCU--GCACGAGCGUGCUGGCACGGG
+NW_021705798.1:28511-29897 ---GAAUGGUUUUCUUACGCUGGUGAAUAGUUACACGUUGUGUUCGCUUCUGAGGUU---CUUUGCCG-------------AGGAGGAGGAGGAGGG--GGGGGAG-GUGGUGGUGGAAG
+NW_021705745.1:83190-84432 GACUUUUACAUCACCAACGUGGCAUUGCCGGCA---ACUGAUUUA----------------UCCACCA-------------GGCUGGUGG------C--UAUAUCAAGUGGAGCCACCGU
+NW_021706084.1:17102-18440 AGGGAGACAAGCUC-----CUUGACACUGAAUACACCUGUUUUCUUCCCAAUCUCCACACACUUCACGGCGUAGAAAGAGCCAUCGUUGAGUAAACCCAAGUAAACAGAGCCGUAUGUCC
+NW_021705786.1:5861-6767   ---GAGAUGAGCAAGUUCGGCGGCUUG-------AGGUC---------------------------------------------------------------------------CCGGUG
+                           ---)))).)))..)).....)))))).-------.))))---------------------------------------------------------------------------......
+
+                           ........................((((.(((..((.....((.....................))...))..))).................)))).......................
+NW_021705860.1:37802-39002 GAUUUUGG----------------GUGGAGUAAGGC--CGUUGAGGAGC---------------CGACGGUGAAGCAC-------GAC----CCCGCCCCUCAUUCGGAC----------
+NW_021706144.1:1909-3022   A----GUU----------------GAGGGCGAGGUC--CUUAAAGCGGCCACUGU------CGUCGAUGUAGAGGGAA-------GUG----CCCACAAACC--UGUUGC----------
+NW_021705798.1:28511-29897 CAAAAUGGAAUGAGGCGAAGCCAAGCGCUGGGGGAA--GGA--AGCG-----UGA------CGCAGCCGACUCCUCAC-------UUCGAGAGGCGCCCUUGCGUUACACCACAGCAGUU
+NW_021705745.1:83190-84432 GACAAUUG------------------GGUCCUUGUCAUCUGGUAGUGUCACCCAU------CGCAUCGAGAGUAGCGAUCCUGUUGUGGAUAUCUGCUUUUCAGGAGGUCCACAUGAAGU
+NW_021706084.1:17102-18440 CACGGCCAAUCAACAGACCACGACGCCACGAUCGGAGCACAGGUGCGUCGCUCGUUUGCAGCAUCUCCGGAGUGAUGCCCUCUGGGCUCAGUGUGGCCCACGA--------ACUAUAUCU
+NW_021705786.1:5861-6767   CAGAACGUUUCGAUCGUGGCAAAAGUGCACGCCAUUCAGCAGGUCCCGCA---------UAAAGUCCUGAAUGGUGGC--------------CGCAUCCAGGUUCCCUUCCUCCCGAUCC
+                           ........................((((.(((..((.....((.......---------.....))...))..)))..--------------.)))).......................
+
+                           .........................................(((...............))).((((............)))).....................................
+NW_021705860.1:37802-39002 ----AACUG-----------------CGGCACU------ACCUC--A-----------CACAGUGCGGGCGGCGAUGA-UGCGAAUGU-----GUGUGGUGGCGGCGGCCGGCUAACGGU
+NW_021706144.1:1909-3022   ----CGCGCC-CUGGCAUGA--GCAACGGUAUG------AUCUCGAA-----------GGAAGUCUGCUC---------CAGGUAGUC-----CU-CGAUCAUUGCG-------------
+NW_021705798.1:28511-29897 CUUUACCAGU-UGUUUAGUA--UGAAACUUGGUCCACGUGCGCUAGA-----------GGGCGCAUUGCCAUCCUUGU-CAGCAUCAU-----CUUCGGUGCC-AAUGUCAUCUAUUAGC
+NW_021705745.1:83190-84432 AACUAUUGCCACGCGUAAUAAACUGACGGUGUACGAUUUACGCAAGACUGCUCAGUUUCUGUGUGAAACCUGUGACGA-UGGCACCGUAGACAUCACAACGUUUGCCACCUCCGACUCUG
+NW_021706084.1:17102-18440 UUCCUCCUCCUCCGGCGUCACGCGAAUCGUGCUGUCGUCA-------------------GCUGCAACGUCUUGCAGGUCGUCGUCAGUUUUCAU--CGGCAGCUGUGGCAAUGAAAUGGU
+NW_021705786.1:5861-6767   AUGUACUUCUUCAG---------------------AUCAAGCUCCAUGUACUCAAACACGAGGGUGAGACGGU----UCUCACU-------------------------------AUGGC
+                           ..............---------------------......(((...............))).((((......----..)))).-------------------------------.....
+
+                           .......(((-((((((..........((.....................))...)))))))))........................................................
+NW_021705860.1:37802-39002 GUGUGGCACG-CUGGACU---------AUUUGU---------CCCCGGAAAUGCUGUCUGGCAUGCCUCACACCUUUA-----------------AGACUGAU---GUGUGGUC-UCUUG
+NW_021706144.1:1909-3022   ----UGCUGC-UGCUGCU---------CGCU--------------CGUGGCGGCGGCAGCGGCAGCAGCAGCGUCUCC-----------------CUGCUGCUUCGCCUCCUUCAUCUUC
+NW_021705798.1:28511-29897 UCGUUUUUCG-CCUUACUGUUUAAACGGGUGAUCGAUUAUUGCUCCUUCGCCGGUGUGAGGUGGAACCUCUACUAUGAGGUGGGAGUGGAAGCGGCGCAGAAGGCGCUUGCCUACGCCCC
+NW_021705745.1:83190-84432 CCUUGGCUGU-AGGGUCUAAAAGCGGUAUUGUUAAUAUUU-------ACAACAAGGGCUCUGCAGGACCCGCGAAG----------------------ACUCUCA---------AGAACC
+NW_021706084.1:17102-18440 CGAGGGUUGU-GGUGAU-------ACGGCAG-----------CCUUUGGUGCUGUCUCGCCAUAG---UCGAC-----------------------------------------------
+NW_021705786.1:5861-6767   ACACGUCAAGCAGCUUU-------ACAAU---------------GUUCGGAUGACGAAGCUCUUUUAGUAG-------------------------------------------------
+                           .......(((.((((((-------...((---------------......))...))))))))).......-------------------------------------------------
+
+                           .........(((......)))................................((..((((.....................))))..))................(((...........
+NW_021705860.1:37802-39002 GUGU-CAUGCUCGCG---GAG-AUGC-----------------------UCACCGGCGCGCCCCC---------CUUUUACUGCGUGUCACACCAGGGCACCCUCGA-CGCAAUUCGCGA
+NW_021706144.1:1909-3022   GCCG-UGAGGUGUCGCGCCAUCUCG----------------------------CGCCGCUGAUCC---------UCGGAAAGCAGCUGCCGGCGAAAGUACUGCUGG-AGGGAGGCGCGA
+NW_021705798.1:28511-29897 GCCCUUGCUGCGAGAGACGGCAGCGCUACUCGUGUCCUAUUGCCGCCAAUUCCCUCCGCUGUAUCAGUCG---GUUCUGAAGCAGGUGGGGGCGGAGGCUCACUUUAUCCUGGAUCAGCU
+NW_021705745.1:83190-84432 UGACGACAAGCAUCA-AUUGUUUGGC----------------------AUUUGGAGAACGCAGCAACGGUGACGCGGUGCUUGCGUACUCGACCAAGGCCCAGAAGGGUGGAUUUCGUCU
+NW_021706084.1:17102-18440 ------AACACUGC---UAGUGCGGUUGCCGUCGCCACCGUCUUUGCUACCCUCUCCUCCCUCGCGGAAGGUCCCUGUGGUGUCAAGGCCGCCC----CUCAAUGGAGUGCGUCUAUCGU
+NW_021705786.1:5861-6767   ---------CGAGAUCUCUCGG-----------------------------AUGGCAGUGC------------------ACGGCACACCCUCC-------UCCUCCGUGUCAAGACG---
+                           ---------(((......))).-----------------------------..((..((((------------------...))))..))...-------......(((........---
+
+                           ................(((((................(((...(((....)))...)))........)))))....................))).........................
+NW_021705860.1:37802-39002 GGCGGACCCUCACUUGGGC-GACGA----------CGUUC-AUAUC--------------UCAUCACUGGCCCGUGAAUUGGUGCUGACAAUGCUGCAGAAGGACCCGGACGCGCGUCCA
+NW_021706144.1:1909-3022   AACUCCUCAUCGCUGCCGCCGGCAA----------ACGUC-AUCUCGCGCGGC-GCGGCGUUGUCGUCGGCGG--GAAUCAGCACAUAC----CGGAAGAAGUUCACUGUGGGGCCUUGA
+NW_021705798.1:28511-29897 GGUGCACUCGAAGUUGUUUCACUUU----------CCAUCGAGCUCCCACGAG-GAGAUGGAGAUG---GAACGUUACGUGUU-----CUAUGAUAAAAAAAGCAGGACGACGACGACGA
+NW_021705745.1:83190-84432 CGC---CGUGCUCCCAGAGUGCCGUGUCGUGCCGUCCUUUCCUGCUGUUUCGC-AGCGUCACCAGUUUAUUCAGAGUUUGGCCUUUGCCCCAACCGUUC---------------------
+NW_021706084.1:17102-18440 UAACGGAGCACCUCGUCUCU-------UUUCGCCCGCCCGAAAAAGAUUUCUUCUUCGUGCCACACCUGGAGCAGAACUUCGCCGUUAACUUGAUGAAAUGGGCACCGCAGUGGUGACAC
+NW_021705786.1:5861-6767   ---------AAUCCGCUUCAGC---------GCGACGGUGGCACCGGUGGCGGUGUCACGG---GCCCUGAACACGACACCAUACGUCCCCUCACCAA----------------------
+                           ---------.......(((((.---------......(((...(((....)))...)))..---...)))))....................)))...----------------------
+
+                           ..............(((.........))).....................................
+NW_021705860.1:37802-39002 ACAAUGGCAG-AGGUGCUG-----CAACACCCAUGGACGAGACCACACCGGGAGAAGGCGAAGUAA
+NW_021706144.1:1909-3022   CCACUCAUCG-CGUGCCUUGC--CUGGGCGCACGGGAU-------------------------CAU
+NW_021705798.1:28511-29897 ACGACGACGG-CGGCGACGGC--AAUGCACCACGAGGCGGCAGCCAAGCGUGA-------------
+NW_021705745.1:83190-84432 ---CUGUGCU-UUCUGUCGGUGAAAAGCAGAAGGUCACGA------------ACUACGCGUUGUGA
+NW_021706084.1:17102-18440 AUCUGUGCCUCCGCCGCCUGCUUUUUGCAGCCAACGAUGCCCUCCGA----------------CAU
+NW_021705786.1:5861-6767   ---UCUUCUCCUGUCGCUCGUAGCGAGUGCC--------------------------------CAU
+                           ---...........(((.........)))..--------------------------------...
+                           ...(((........................)))............(((........)))------------------------......(((--(((((.............)))))..)
+NW_021705860.1:37802-39002 AUGUGGCAGCUU---CACAACGUGCGCUUGCCGCCGCG-----------------GAGG------------------------UUGUGUGAC--GCAAAGCC----------GUUGA--U
+NW_021706144.1:1909-3022   UUAGGCAAAAAG---UUUGGAGAACUU-CUGCUUC-----------------------------------------------------UGCU--CCUUCCGG----------AGGGC--A
+NW_021705798.1:28511-29897 AUGGUGUGCAGAAACGGCAAUGCCUCCUCACAAUUUAGCGUCUCCUCCAUACAGCAGGA------------------------ACGUGAGCU--GCCGCAGCAACAGCAACAGCGGC--A
+NW_021705745.1:83190-84432 AU-GGCGUCUCGUGCUUGGGUGGACG--AUGCAGAUCACAACGCGGGUGAGGAGCUGCC------------------------AGGUUUUGU--GAAGCAG---UCUCAUGUGCUUCCCG
+NW_021706084.1:17102-18440 CUA-------------------------CUCCAUCUCUCCAAGAAUCCAGGGGUGCUGC------------------------AUGAGCUCC--UCCACGGU----UGGACGCUGCCCCG
+NW_021705786.1:5861-6767   UCAAAACUCC-----------------------------------------------------------------------------------------------AAGGAGAAGUAUGGG
+NW_021706014.1:2681-4634   UUAGGGUUUUUUUCC-----AGUAUGAUUUCCCCCGUAGACAGGGUUGCAACAGUUCAGCGUACGCCUCAGUCCCAAGGUGAAAUUAGAGGUAGGGACUUCAUUUCUAUCCCGGUCUCUG
+                           ...(((.........-----..........)))............(((........)))..............................(((..(((((.............)))))..)
+
+                           ))............................(((...---------------------------((((((((((..........((((......))))........)))))))))).....
+NW_021705860.1:37802-39002 GUCAC-C--------------------------AUU---------------------------ACAGGGGGGGUACACGCGAGGUGACGCGUGUCAC---------UCUUCUUUUG----
+NW_021706144.1:1909-3022   GCUGC-CCCCUCAG-----------------CGAUG---------------------------GCCUGGCGG----------AUGGCUGCGACGUCA---------CUGGCGGGCC----
+NW_021705798.1:28511-29897 GCAGC-AACAACAGG--C---------CGCACUGUU---------------------------UGGUUUGGAGCACCUUAUGACGGCCACGUAUCCGCCACCUAGCUUCGAGCCGAGCC-
+NW_021705745.1:83190-84432 CAUGG-GCCACCACG--UCCACGCAUGCAGACCGCA---------------------------GCGUUAUUGGC------------------------------GACAAUGGUGCAGCCA
+NW_021706084.1:17102-18440 GAUCU-CGCACAAAGCACCUACGCAUAAAAUCCAGG---------------------------CACCCCGGCGUCGCCUCCGCCUCCGGAAUCUC----------UGUCGGUC-------
+NW_021705786.1:5861-6767   UGCUCAAGCGCCUGAGCAGCUGUUAGGCGUUCGCUG---------------------------GGCUCGU-----ACUUCAGCAGGCGCCGAAGGAGAUCAAUACCCUCCGGGCCCAGCU
+NW_021706014.1:2681-4634   UCUCGUUCGGCAUACAUUUCCAUCAAGCGCAAGAUAAAACCAUCCGUCUGCCGUCCGUCCCGCAGAGGAGAGGCUAUCACUUCCGCCGUUGUUGGCG--------CCUCUUCUUUUUCCA
+                           ))............................(((..............................((((((((((..........((((......))))--------)))))))))).....
+
+                           .......))).----------..((((...------------....((((......))))............((........................)).........)))).......
+NW_021705860.1:37802-39002 -------CAGG----------UGGCGGACA------------CGAAGACGCGUCGGAGUCGGAGCCAAACUCGCAGGC--GUCAUUGCAG----GCCUGCUUUGUCGCACCGCAGCCAUG
+NW_021706144.1:1909-3022   -------CGCC----------CAGCUG-CU------------CAAAGGCGU-UCAGCGCC---------------UCC--GCCGCUGCGGCGUAGUCACGUCCGCCGCAAAGGGCGACUG
+NW_021705798.1:28511-29897 ---GCACAGUG----------CUGCUGC------------------GACGCAAGGUCGACGUCAUUAACUGCAUCACCAAGCGAAUUCGGCGUAUCAGUGAGGGCCUCACAGUUGGCAGU
+NW_021705745.1:83190-84432 GAAGUGAGGUC----------GUCGUCUCU------------UCCUCAUCCGCACUGAUGAUGACAGCCCAAAAAA------------GAUUUCGUGAUAAGGACCU-GGACGAACUUCU
+NW_021706084.1:17102-18440 -------CGUC----------CUUCGCCUG------------CGCAAUCAUCA---UGAUGGCAGCGGGCGCGUUCAC-----------------CUGACUCGGCCACG-----------
+NW_021705786.1:5861-6767   UCGCGUACGCG----------GGCACGGUG------------CGAAA-------------------------------------------------------------------------
+NW_021706014.1:2681-4634   UAAUGAGCUUCGCAAUCUCCUCACAGUCCUUCUUAGAACACACCUCCACACCCUCGUGUGUGUGGCUACCAAUGUAUUCA-CGAUUUAGUUGUAGUGCCAGAAAAACCAACUGUGCCGCA
+                           .......))).............((((...................((((......))))............((......-.................)).........)))).......
+
+                           ................(((.((.(((((...........---------------)))))..)).)))...................................((((..............
+NW_021705860.1:37802-39002 CACGUCAUC--CUCACCGGUUGAAGCGGCGUCGCAGGAA---------------UCGCU-GCAACCGCAGAAGC---AGCCGCCGCAAGAGCAGCAACAACUUGUCA----UUCGACA--
+NW_021706144.1:1909-3022   CCAGUCGAU--GGUGGGCCUUGAGGUUC-GUGGCAUC-----------------GAGCU-GCAGGGC-AGCCCG---UGCGUCCGCAGCGGCGGCUUCGUUUUUGC-----CGAGACGGU
+NW_021705798.1:28511-29897 UUCUCCUUCAAAAACCGGCGUG-CGCUGGCCCACA-------------------CAGUC-GUACGCAGUGCACU---UCAGGCCGCCUA-----CCACAAUUGCCGU----CGAGACAUC
+NW_021705745.1:83190-84432 CGCGCGGACGGAGCCACUUUUGACGUCG------AAGCA---------------CGACC-GCAAGCA----------UGCUGCUCUUCCACCUGUCCUUUCCGUGCUUCCCCUUCCUCGU
+NW_021706084.1:17102-18440 --------------GUGGCUUGCCUGUGAGCAUCUCAGC---------------CACGGUGCACCCCACGGACCAAACAUCGGCCUUGUAGCUGUACCCUUCGCCGCUGC----------
+NW_021705786.1:5861-6767   ----------------CUGAACGUCGCACUCCGC--------------------UGCGA-GGUUCUGCAGGAACUCGGG-----------------------CUUCGACAACAUGUUGGU
+NW_021706014.1:2681-4634   AACUCUGAGGCAGGACGGCCCUCUUUUUCAUAGGUAUCAUAAAGCCGAAGAAAGGAAAAGUAGUGCUCGCACCGACUCGUUUGAUGACUCGGCUUUCGCUUCGCGAGGUCGGGAAACGUC
+                           ................(((.((.(((((..........................)))))..)).)))...................................((((..............
+
+                           ......))))-------------------...........((((..((....(((((.((..(((((...............((((........(((..........)))..........
+NW_021705860.1:37802-39002 GGA--AGACA-------------------UACGGGACGAGGACUUUCA----GCGGCUAGA-GGUGU---------------UGGGUGAUGGU-UCAUACUCUGUUGUGGUUGCCGCCCG
+NW_021706144.1:1909-3022   GGU--GGCAA----------------------AGGCUGCGGUUGAGCA----GUGCGGAGA-GUCGC---------------AG----------CGCAG---UGACUGCGGCCUCGUUCG
+NW_021705798.1:28511-29897 UUU--GUGGC-------------------CUC------CUCAUUUGAU----GCGGCUGAG-GGGGU-----------------GCCUGUGUA-CAGCGACACCAUCGCGGGGGCGUU--
+NW_021705745.1:83190-84432 GAUUCUGCAC----------------------GGACGGUUCAGUGGCA----UCGCAACGG-GCAGC---------------UGGCAGUGGUA-GGUGGCAACCACCACUUGUACCUUUU
+NW_021706084.1:17102-18440 ------CGGU-------------------CACGUCUACCACCUCCGGCGCCAUCCAGUAU--GGGGUGCCAAUAACGGUCCGGCUCUGUGCCA-CGGCGUCCGAGAGUCGUCUGGCCGCG
+NW_021705786.1:5861-6767   GGAGUUGGGG-------------------UACUGGUUCAUGGAAGGCCACACCUGGUUGUUCGGCGUUCCCAGAAAACGAAA-------AAUGCGCAGCAACUGAUCUGCGUCAUUUUUU
+NW_021706014.1:2681-4634   CUGACCUCGCUAGGAGACAAGGAUAAAGAUAGGGGAGACAGGAACCUCGAGACCGUCCGGUUGGCGG--------------AUGCAUUAAGGAUGGCUCGCUUUGAGGCCUUGCGAUCCA
+                           ......))))..............................((((..((....(((((.((..(((((--------------.((((........(((..........)))..........
+
+                           ...........))))..........))))).)).)))))..)).------------------------.)))).............-----------...............(((...((
+NW_021705860.1:37802-39002 UCAUUUGCCGACCCA----------GCAG--CUGGUUGCACUGA------------------------AGGAACUCUCGCGACGAC-----------GCCUGAAGGAGUUGGAGC--UGG
+NW_021706144.1:1909-3022   GCA--GGAGGUCCCU----------GCGGCCCUCCGUG---AGU------------------------UCGACGGC-CUCGUCGUA-----------GGCC----UUCACGGCCGCCUUG
+NW_021705798.1:28511-29897 -------UCUCUGCA----------ACACCGUCAAUUCCGCCGA------------------------CCCAGUGCUUUACGCGUC-----------GG---------------------
+NW_021705745.1:83190-84432 CCA----UGCAGCCG----------GCA--AGUUUGUGGA----------------------------------GCAGCUCUCCAA-----------GAC---AGAUGUGGAGAAACGGG
+NW_021706084.1:17102-18440 CCAAAGUCCACAAGUUUAAUUUGCGACUCCAGUUUUGGAUCGCU------------------------UGAGGUGUCUACAAGAA------------GGUUAUCGCCCUUGAUGUCGCGG
+NW_021705786.1:5861-6767   CCAGCG----------AAUAGUGGGGCGCCAAUGGCCA------------------------------UUUCCG----------------------------------------CAAAGA
+NW_021706014.1:2681-4634   AACUCGUGGCAUGCA----------UCGUUACCCGACGGAUGAUAUCAAUAACAGGCACGCUGCCGUCAUUCCAGCGCUCGUUGCACGAGACCAGGUGCCCCCCAAACUCCGUCACAUCA
+                           ...........))))----------))))).)).)))))..))..........................)))).......................................(((...((
+
+                           ....)).)))..((......))......................(((((((....)))))))...............------------...(((((.............-------...
+NW_021705860.1:37802-39002 AGAAUCAGUUGCAGUGGGAGA---UCAACGUUCACCGUACGCUGCGCCAUCCCAACGUGGU-C---AGGAUGCUGAG------------CUACUACGUC----ACCCCAC-------AGA
+NW_021706144.1:1909-3022   AAAUCACCGGCGGUGAAAAAGCUGUUACCGUUCACCU--UCGCCUGCUGUGCCUUCGCGGUAU---CCGCUUCGCUG------------AU-GCGCUUC----GUGUCAC----------
+NW_021705798.1:28511-29897 ---UCCUGUCAAGCUUCGUUGCUUACGGUGUGGACUUCGCUGCGCCGCGUCACAGUGCGGGUG---AACACGCGGCC------------GCGAGCAACC----AGGCGAC-------GCC
+NW_021705745.1:83190-84432 UCGAGCACACAGCACUUGGGGCCUCAGGCGAAGACGUUGUAAUUGUGGGACAUCAGUCGUACACACCAGAUCUAUUG------------GUGCUCGCUA----CGGAAAA-------ACU
+NW_021706084.1:17102-18440 UGUAUAAUGCCCUGCGUGUGCAGGUAAA-GCAGACCCUUGAGCAGCUGCUGGGUCCAGCUUCGCACCACGGCAGGAU------------GCAAUGGUUUAAAAACUUU-C-------ACU
+NW_021705786.1:5861-6767   UACACCCGACGGACCAUAU-GUCUACAGG------CGUGCCAUACUGUGUGGAGCCAAGCAGUACA------------------------------------------------------
+NW_021706014.1:2681-4634   CUCAUGGUGGCUGCCUCUGUGUUUCCUAUCAUGUUGUCGUAGAGGUCUUGGGGCACCAGGGCGCGAAUGGCGGUGAUCAAAGGCACCAACCAGGCCUUGCAGUAGUCUACCACCAUUUCC
+                           ....)).)))..((......))......................(((((((....)))))))..............................(((((.......................
+
+                           .............))))).....((........((...........................))........)).............---------------------------------
+NW_021705860.1:37802-39002 ACGUUGUGCUGGUGCUGGAGUUGUG-UCCC--------------------------------UGUGGGA---CGCUUCUGCAG-AAG---------------------------------
+NW_021706144.1:1909-3022   -------UCUCGCGCUGCAUCACUG-CCGAGGUCAUCUGCGC-------------------UUGGUUGG---CGGUGUCGUAGCUAG---------------------------------
+NW_021705798.1:28511-29897 ACCGC---UUCCUUUGCUAGACACC-GCGCUCUACUGCCUGCAUGAGACAGCAAAGACGAUUUGUGCGC---GGCCUGCGGCGCCAC---------------------------------
+NW_021705745.1:83190-84432 GAUU------CCGUUGAGGUUUCU------------------------------------UUUUACGCG---UGAUUCCGCCGUAUA---------------------------------
+NW_021706084.1:17102-18440 AAAGAGGACAAGGGCCCACCACCGAUGUAUUCCAU--------------AAACAUACAAAUGGUGGUAC---UCGGUGAAUCGUAGC---------------------------------
+NW_021705786.1:5861-6767   ---------UCCGGGGAGCGGUACCAGAGCGUCACCAC----------------------------CUCAUGCGUAAACUUCUUAAC---------------------------------
+NW_021706014.1:2681-4634   AAUCCAUUGUCGAGGGCCUGAUUGCGAAGAUUCGGGAUUAUGGGGUCCAUCCCUCGCUGCUCCUCUUCAUAGGCUUCGCGGAGCCACUCGGUAACCAUGCAACCGGCUAAAUUAAAAAAC
+                           .............))))).....((........((...........................))........))..............................................
+
+                           -------((.(((....---------------------------....))).))......................(((..((.....((...((.((.((....---..........))
+NW_021705860.1:37802-39002 -------CUGAGGGCAA---------------------------U-GCCGCAAGGAAGGUUUGAUGAACGACGGGCGUCGCGGUA-------UGUGCGACAGGCC---GCACGGGCGCUA
+NW_021706144.1:1909-3022   -------UCGUGGGCGG---------------------------U-UCCCGCAGGAGGGCUUCGU----AGUGGGCGA--GAGUG-------CAGUCGAC--------------------
+NW_021705798.1:28511-29897 -------UUGAGGAAAA---------------------------UAUUACUGAGCAUAAUG--AAAACGGCGACCCCGCACCAAAGCAAGAUCAAGGCAGUUUCC---A-------GAAU
+NW_021705745.1:83190-84432 -------UCG-----------------------------------------------------------------CAAUGGCC-GACGGGAC--AAUGGAAAGC-------AUGACUUUU
+NW_021706084.1:17102-18440 -------ACACACCCUU---------------------------AAAGGUGCAG---AGAUUCUUGUGAUGCAGACGCCGCAUAAU--------GUUAAUCUCCC---GCGACAGGGAGA
+NW_021705786.1:5861-6767   -------GGGAAUGCCA---------------------------AACGCCCGCCCCAGGCCA--------------AAGUCCGC-CAGCUUCACAUUCUUCUCAC---GC------GAGA
+NW_021706014.1:2681-4634   UGCGCGUGUGGGCGCAAAGUCAAGGCGUUAUCUGCCAGAAUAAUUAUAGCUGACAAGAGCAGCGGUACAUCCUCUAGUUCCACCACAUUU---GCGGCUGCUAUCUUUUCAAGACCGUGC
+                           .......((.(((...................................))).))......................(((..((.....((---((.((.((.................))
+
+                           .)).)))).....)).)))...................................(((((((................)))))))...........------------------.......
+NW_021705860.1:37802-39002 GCGUAUCUG---CACGGACAU-GGCAUUGCCCACCGCGACU-------UGAAACUAGAGAA-------------CGUUUUUUUAGAUGCG--CGG------------------GGUGUGG
+NW_021706144.1:1909-3022   GCGGCUCCA---C-UCGUCGA-GGGCGGGGUCAUCGUGGCUACAGAGAAGGAAGGCGUCCC-------------CG-CGGAUGUCGCGCU--GCA------------------CGAGCGU
+NW_021705798.1:28511-29897 GGUUUUCUUACGCUGGUGAAUAGUUACACGUUGUGUUCGCUUCUGAGGUU---CUUUGCCG-------------AGGAGGAGGAGGAGGG--GGG------------------GGAG-GU
+NW_021705745.1:83190-84432 ACAUCACCAACGUGGCAUUGCCGGCA---ACUGAUUUA----------------UCCACCA-------------GGCUGGUGG------C--UAU------------------AUCAAGU
+NW_021706084.1:17102-18440 CAAGCUC-----CUUGACACUGAAUACACCUGUUUUCUUCCCAAUCUCCACACACUUCACGGCGUAGAAAGAGCCAUCGUUGAGUAAACCCAAGU------------------AAACAGA
+NW_021705786.1:5861-6767   UGAGCAAGUUCGGCGGCUUG-------AGGUC----------------------------------------------------------------------------------------
+NW_021706014.1:2681-4634   AGCAGCAAGUCACGUAAACGCGGG----GCUGUGAUCAGUACAGUCUCAAACAGUAACUCUCUCAAAAACUGAGAAAAGGGUUGAGUGCCACUAUUUGCAAAGAGCUUAAUAAAGCAAUU
+                           .)).)))).....)).))).....----..........................(((((((................)))))))....................................
+
+                           ........................................(((..((...((((.((................))))))----.))..)))............................(
+NW_021705860.1:37802-39002 CAAGGCUGGGAGAUUUUGG----------------GUGGAGUAAGGC--CGUUGAGGAGC---------------CGAC----GGUGAAGCAC-------GAC----CCCGCCCCUCAUU
+NW_021706144.1:1909-3022   GCUGGCACGGGA----GUU----------------GAGGGCGAGGUC--CUUAAAGCGGCCACUGU------CGUCGAU----GUAGAGGGAA-------GUG----CCCACAAACC--U
+NW_021705798.1:28511-29897 GGUGGUGGAAGCAAAAUGGAAUGAGGCGAAGCCAAGCGCUGGGGGAA--GGA--AGCG-----UGA------CGCAGCC----GACUCCUCAC-------UUCGAGAGGCGCCCUUGCGU
+NW_021705745.1:83190-84432 GGAGCCACCGUGACAAUUG------------------GGUCCUUGUCAUCUGGUAGUGUCACCCAU------CGCAUCG----AGAGUAGCGAUCCUGUUGUGGAUAUCUGCUUUUCAGG
+NW_021706084.1:17102-18440 GCCGUAUGUCCCACGGCCAAUCAACAGACCACGACGCCACGAUCGGAGCACAGGUGCGUCGCUCGUUUGCAGCAUCUCC----GGAGUGAUGCCCUCUGGGCUCAGUGUGGCCCACGA--
+NW_021705786.1:5861-6767   -----CCGGUGCAGAACGUUUCGAUCGUGGCAAAAGUGCACGCCAUUCAGCAGGUCCCGCA---------UAAAGUCCU----GAAUGGUGGC--------------CGCAUCCAGGUUC
+NW_021706014.1:2681-4634   UUCCUCACGGUUUAAAUGGUAGAGAAACGCCGUGAGACUCGCCGACUGCUGGGUAGUUAUGUCC-----CCAUACACCCAAACGAGGGGGUGAUCAAUGCG---------GGCCAAAAAA
+                           ........................................(((..((...((((.((.......-----....)))))).....))..)))..........---------.........(
+
+                           (((................((...........)).....................(((.................)))((((............---))))....---------------
+NW_021705860.1:37802-39002 CGGAC--------------AACUG-----------------CGGCACU------ACCUC--A-----------CACAGUGCGGGCGGCGAUGA----UGCGAAUG---------------
+NW_021706144.1:1909-3022   GUUGC--------------CGCGCC-CUGGCAUGA--GCAACGGUAUG------AUCUCGAA-----------GGAAGUCUGCUC------------CAGGUAGU---------------
+NW_021705798.1:28511-29897 UACACCACAGCAGUUCUUUACCAGU-UGUUUAGUA--UGAAACUUGGUCCACGUGCGCUAGA-----------GGGCGCAUUGCCAUCCUUGU----CAGCAUCA---------------
+NW_021705745.1:83190-84432 AGGUCCACAUGAAGUAACUAUUGCCACGCGUAAUAAACUGACGGUGUACGAUUUACGCAAGACUGCUCAGUUUCUGUGUGAAACCUGUGACGA----UGGCACCG---------------
+NW_021706084.1:17102-18440 ------ACUAUAUCUUUCCUCCUCCUCCGGCGUCACGCGAAUCGUGCUGUCGUCA-------------------GCUGCAACGUCUUGCAGGUC---GUCGUCAG---------------
+NW_021705786.1:5861-6767   CCUUCCUCCCGAUCCAUGUACUUCUUCAG---------------------AUCAAGCUCCAUGUACUCAAACACGAGGGUGAGACGGU----UC---UCACU------------------
+NW_021706014.1:2681-4634   ACGUU----UGAUACCCCCGGGUGCACAAAGCUCAGAGACAGUGUGGCCAAAAAAGCCACAAUUACUUCGUUGUCGGUGAAGAUCAGCGUCGCCGGUUUUUCUCGCAGGAUGAGGUAAAG
+                           (((..----..........((...........)).....................(((.................)))((((...............))))...................
+
+                           --------.....................))))...((.(((----......(((.((((((..........(((((...............)))))----------------...)))-
+NW_021705860.1:37802-39002 --------U-----GUGUGGUGGCGGCGGCCGGCUAACGGUG----UGUGGCACG-CUGGACU---------AUUUGU---------CCCCGGAAAU----------------GCUGUC-
+NW_021706144.1:1909-3022   --------C-----CU-CGAUCAUUGCG---------------------UGCUGC-UGCUGCU---------CGCU--------------CGUGGCG----------------GCGGCA-
+NW_021705798.1:28511-29897 --------U-----CUUCGGUGCC-AAUGUCAUCUAUUAGCU----CGUUUUUCG-CCUUACUGUUUAAACGGGUGAUCGAUUAUUGCUCCUUCGCC----------------GGUGUG-
+NW_021705745.1:83190-84432 --------UAGACAUCACAACGUUUGCCACCUCCGACUCUGC----CUUGGCUGU-AGGGUCUAAAAGCGGUAUUGUUAAUAUUU-------ACAAC----------------AAGGGC-
+NW_021706084.1:17102-18440 --------UUUUCAU--CGGCAGCUGUGGCAAUGAAAUGGUC----GAGGGUUGU-GGUGAU-------ACGGCAG-----------CCUUUGGUGC----------------UGUCUC-
+NW_021705786.1:5861-6767   ------------------------------------AUGGCA----CACGUCAAGCAGCUUU-------ACAAU---------------GUUCGGAU----------------GACGAA-
+NW_021706014.1:2681-4634   CAUUUGCACAGAGUCGGCGGCGUGGAGGGCGUUGUGAUAGGCAUUAUCUGUAGCAUAACCCUCAAAGAGAGAGGAGAGGAAGCUCAGGAGCUUCUCCACAUCCAUCUGACUGCUGAAGGA
+                           .............................))))...((.(((..........(((.((((((..........(((((...............)))))...................))).
+
+                           ---))))))......))).))...................................................(((((......--------------)))))..................
+NW_021705860.1:37802-39002 ---UGGCAUGCCUCACACCUUUA-----------------AGACUGAU---GUGUGGUC-UCUUGGUGU-CAUGCUCGCG-----------------GAG-AUGC---------------
+NW_021706144.1:1909-3022   ---GCGGCAGCAGCAGCGUCUCC-----------------CUGCUGCUUCGCCUCCUUCAUCUUCGCCG-UGAGGUGUCGCGC--------------CAUCUCG----------------
+NW_021705798.1:28511-29897 ---AGGUGGAACCUCUACUAUGAGGUGGGAGUGGAAGCGGCGCAGAAGGCGCUUGCCUACGCCCCGCCCUUGCUGCGAGAGAC--------------GGCAGCGCUACUCGUGUCCUAUU
+NW_021705745.1:83190-84432 ---UCUGCAGGACCCGCGAAG----------------------ACUCUCA---------AGAACCUGACGACAAGCAUCA-AU--------------UGUUUGGC---------------
+NW_021706084.1:17102-18440 ---GCCAUAG---UCGAC-----------------------------------------------------AACACUGC---U--------------AGUGCGGUUGCCGUCGCCACCGU
+NW_021705786.1:5861-6767   ---GCUCUUUUAGUAG----------------------------------------------------------CGAGAUCUC--------------UCGG-------------------
+NW_021706014.1:2681-4634   AAAGUUUGCAAGCACGCUAGUACACACUGAAAGAAAGACUCUUCUUGGGUCCUUCAUCAACUCCCCGUUGAAAUCGGUCACGUCACGGCUGCUAAAAUCGAUGCUUUCCACUUCCUUCAC
+                           ...))))))......))).))...................................................(((((....................)))))..................
+
+                           ............((..((((....((.........-----------------))....))))..))......................................----------------
+NW_021705860.1:37802-39002 --------UCACCGGCGCGCCCCC---------CU-----------------UUUACUGCGUGUCACACCAGGGCACCCUCGA-CGCAAUUCGCGAGGCGGACC----------------
+NW_021706144.1:1909-3022   ------------CGCCGCUGAUCC---------UC-----------------GGAAAGCAGCUGCCGGCGAAAGUACUGCUGG-AGGGAGGCGCGAAACUCCUC----------------
+NW_021705798.1:28511-29897 GCCGCCAAUUCCCUCCGCUGUAUCAGUCG---GUU-----------------CUGAAGCAGGUGGGGGCGGAGGCUCACUUUAUCCUGGAUCAGCUGGUGCACU----------------
+NW_021705745.1:83190-84432 -------AUUUGGAGAACGCAGCAACGGUGACGCG-----------------GUGCUUGCGUACUCGACCAAGGCCCAGAAGGGUGGAUUUCGUCUCGC---CG----------------
+NW_021706084.1:17102-18440 CUUUGCUACCCUCUCCUCCCUCGCGGAAGGUCCCU-----------------GUGGUGUCAAGGCCGCCC----CUCAAUGGAGUGCGUCUAUCGUUAACGGAG----------------
+NW_021705786.1:5861-6767   ----------AUGGCAGUGC-----------------------------------ACGGCACACCCUCC-------UCCUCCGUGUCAAGACG---------------------------
+NW_021706014.1:2681-4634   AUAUUUCAGUGUCUGAUGCAUGACCCUGUUCAUUUGUCCAAAGGUUUCGGUGGGGUCUUGCAGGAGCGGGACGUCACGCUUCAGGUUGGUUUGAAUACUAGCCCAGUUGGCGGGAUUAUU
+                           ............((..((((....((..........................))....))))..))......................................................
+
+                           ---------------......((((((...............-((.((....((....))....)).))---------.......))))))....-----------------........
+NW_021705860.1:37802-39002 ---------------CUCACUUGGGC-GACGA-----------CGUUC-AUAUC--------------U---------CAUCACUGGCCCGUGAA-----------------UUGGUGCU
+NW_021706144.1:1909-3022   ---------------AUCGCUGCCGCCGGCAA-----------ACGUC-AUCUCGCGCGGC-GCGGCGU---------UGUCGUCGGCGG--GAA-----------------UCAGCACA
+NW_021705798.1:28511-29897 ---------------CGAAGUUGUUUCACUUU-----------CCAUCGAGCUCCCACGAG-GAGAUGG---------AGAUG---GAACGUUAC-----------------GUGUU---
+NW_021705745.1:83190-84432 ---------------UGCUCCCAGAGUGCCGUGUCGUGCCGU-CCUUUCCUGCUGUUUCGC-AGCGUCA---------CCAGUUUAUUCAGAGUU-----------------UGGCCUUU
+NW_021706084.1:17102-18440 ---------------CACCUCGUCUCU-------UUUCGCCC-GCCCGAAAAAGAUUUCUUCUUCGUGC---------CACACCUGGAGCAGAAC-----------------UUCGCCGU
+NW_021705786.1:5861-6767   ----------------AAUCCGCUUCAGC---------GCGA-CGGUGGCACCGGUGGCGGUGUCACGG------------GCCCUGAACACGAC-----------------ACCAUACG
+NW_021706014.1:2681-4634   GUCCUGCAAAUUGAACUUCUCCGCCCUGCAGUGGCUCGUAGCGUCAGCAAAAAGAAGACUCCGCGCAGGAGCAUGACCCAUGAAGAGGGCGUCACCAAAACACCUCCCUUCUCUUUCCCG
+                           .....................((((((................((.((....((....))....)).))................)))))).............................
+
+                           ...............................(((....)))(((....(((.........)))...)))...............................
+NW_021705860.1:37802-39002 GACAAUGCUGCAGAAGGACCCGGACGCGCGUCCAACAAUGGCAG-AGGUGCUG-----CAACACCCAUGGACGAGACCACACCGGGAGAAGGCGAAGUAA
+NW_021706144.1:1909-3022   UAC----CGGAAGAAGUUCACUGUGGGGCCUUGACCACUCAUCG-CGUGCCUUGC--CUGGGCGCACGGGAU-------------------------CAU
+NW_021705798.1:28511-29897 --CUAUGAUAAAAAAAGCAGGACGACGACGACGAACGACGACGG-CGGCGACGGC--AAUGCACCACGAGGCGGCAGCCAAGCGUGA-------------
+NW_021705745.1:83190-84432 GCCCCAACCGUUC------------------------CUGUGCU-UUCUGUCGGUGAAAAGCAGAAGGUCACGA------------ACUACGCGUUGUGA
+NW_021706084.1:17102-18440 UAACUUGAUGAAAUGGGCACCGCAGUGGUGACACAUCUGUGCCUCCGCCGCCUGCUUUUUGCAGCCAACGAUGCCCUCCGA----------------CAU
+NW_021705786.1:5861-6767   UCCCCUCACCAA-------------------------UCUUCUCCUGUCGCUCGUAGCGAGUGCC--------------------------------CAU
+NW_021706014.1:2681-4634   CACGCCUUUUUCAGGUUCCUCAUAGUGCGCGCUGAGGACGGCGG----UGGAGAGUUUCCCUAGGGCCGGUCGCUGCAGCCCAUUUUUUUUGUGAGGCAU
+                           ...............................(((....)))(((----(((.........)))...)))...............................
+                           ...............(((...))).-----------------------------------------------------------------------------------------------
+NW_021705781.1:65798-66371 UCAGU---CGGA------------------------------------------------------------------------------------------------------------
+NW_021705755.1:10160-10793 UUAUUGCACGGAAUCCUGCCUCAGU-----------------------------------------------------------------------------------------------
+NW_021705918.1:28921-29239 UCACUGCAUGUAAAAUGGCCAUGGU-----------------------------------------------------------------------------------------------
+NW_021705860.1:37802-39002 AUGUGGCAGCUU---CACAACGUGCGCUUGCCGCCGCG-----------------GAGG------------------------UUGUGUGAC--GCAAAGCC----------GUUGA--U
+NW_021706144.1:1909-3022   UUAGGCAAAAAG---UUUGGAGAACUU-CUGCUUC-----------------------------------------------------UGCU--CCUUCCGG----------AGGGC--A
+NW_021705798.1:28511-29897 AUGGUGUGCAGAAACGGCAAUGCCUCCUCACAAUUUAGCGUCUCCUCCAUACAGCAGGA------------------------ACGUGAGCU--GCCGCAGCAACAGCAACAGCGGC--A
+NW_021705745.1:83190-84432 AU-GGCGUCUCGUGCUUGGGUGGACG--AUGCAGAUCACAACGCGGGUGAGGAGCUGCC------------------------AGGUUUUGU--GAAGCAG---UCUCAUGUGCUUCCCG
+NW_021706084.1:17102-18440 CUA-------------------------CUCCAUCUCUCCAAGAAUCCAGGGGUGCUGC------------------------AUGAGCUCC--UCCACGGU----UGGACGCUGCCCCG
+NW_021705786.1:5861-6767   UCAAAACUCC-----------------------------------------------------------------------------------------------AAGGAGAAGUAUGGG
+NW_021706014.1:2681-4634   UUAGGGUUUUUUUCC-----AGUAUGAUUUCCCCCGUAGACAGGGUUGCAACAGUUCAGCGUACGCCUCAGUCCCAAGGUGAAAUUAGAGGUAGGGACUUCAUUUCUAUCCCGGUCUCUG
+                           ...............(((...)))................................................................................................
+
+                           ------------------..............................................(((((((..........--------------------------)))))))....--
+NW_021705781.1:65798-66371 -------------------------------GAACGCCAUGCUAAUGAGCCA----CUCCAUGACAUCCCCGAGCCCC--------------------------------AGCCCAUU--
+NW_021705755.1:10160-10793 ------------------UUACACAUGUUACACGUCUCAAACGUCUCGUCAAUAAUGCGCAGUAGCUUUUCGUACGCCACG--------------------------UCAAGGUCUUU--
+NW_021705918.1:28921-29239 ------------------AC--------------------------------------------CACAAGCGUUCCCAACG--------------------------GUUUGUC--UA--
+NW_021705860.1:37802-39002 GUCAC-C--------------------------AUU---------------------------ACAGGGGGGGUACACGCGAGGUGACGCGUGUCAC---------UCUUCUUUUG----
+NW_021706144.1:1909-3022   GCUGC-CCCCUCAG-----------------CGAUG---------------------------GCCUGGCGG----------AUGGCUGCGACGUCA---------CUGGCGGGCC----
+NW_021705798.1:28511-29897 GCAGC-AACAACAGG--C---------CGCACUGUU---------------------------UGGUUUGGAGCACCUUAUGACGGCCACGUAUCCGCCACCUAGCUUCGAGCCGAGCC-
+NW_021705745.1:83190-84432 CAUGG-GCCACCACG--UCCACGCAUGCAGACCGCA---------------------------GCGUUAUUGGC------------------------------GACAAUGGUGCAGCCA
+NW_021706084.1:17102-18440 GAUCU-CGCACAAAGCACCUACGCAUAAAAUCCAGG---------------------------CACCCCGGCGUCGCCUCCGCCUCCGGAAUCUC----------UGUCGGUC-------
+NW_021705786.1:5861-6767   UGCUCAAGCGCCUGAGCAGCUGUUAGGCGUUCGCUG---------------------------GGCUCGU-----ACUUCAGCAGGCGCCGAAGGAGAUCAAUACCCUCCGGGCCCAGCU
+NW_021706014.1:2681-4634   UCUCGUUCGGCAUACAUUUCCAUCAAGCGCAAGAUAAAACCAUCCGUCUGCCGUCCGUCCCGCAGAGGAGAGGCUAUCACUUCCGCCGUUGUUGGCG--------CCUCUUCUUUUUCCA
+                           ................................................................(((((((....................................)))))))......
+
+                           ------------------------------------------------------------------------------------------------------------------------
+NW_021705781.1:65798-66371 ------------------------------------------------------------------------------------------------------------------------
+NW_021705755.1:10160-10793 ------------------------------------------------------------------------------------------------------------------------
+NW_021705918.1:28921-29239 ------------------------------------------------------------------------------------------------------------------------
+NW_021705860.1:37802-39002 -------CAGG----------UGGCGGACA------------CGAAGACGCGUCGGAGUCGGAGCCAAACUCGCAGGC--GUCAUUGCAG----GCCUGCUUUGUCGCACCGCAGCCAUG
+NW_021706144.1:1909-3022   -------CGCC----------CAGCUG-CU------------CAAAGGCGU-UCAGCGCC---------------UCC--GCCGCUGCGGCGUAGUCACGUCCGCCGCAAAGGGCGACUG
+NW_021705798.1:28511-29897 ---GCACAGUG----------CUGCUGC------------------GACGCAAGGUCGACGUCAUUAACUGCAUCACCAAGCGAAUUCGGCGUAUCAGUGAGGGCCUCACAGUUGGCAGU
+NW_021705745.1:83190-84432 GAAGUGAGGUC----------GUCGUCUCU------------UCCUCAUCCGCACUGAUGAUGACAGCCCAAAAAA------------GAUUUCGUGAUAAGGACCU-GGACGAACUUCU
+NW_021706084.1:17102-18440 -------CGUC----------CUUCGCCUG------------CGCAAUCAUCA---UGAUGGCAGCGGGCGCGUUCAC-----------------CUGACUCGGCCACG-----------
+NW_021705786.1:5861-6767   UCGCGUACGCG----------GGCACGGUG------------CGAAA-------------------------------------------------------------------------
+NW_021706014.1:2681-4634   UAAUGAGCUUCGCAAUCUCCUCACAGUCCUUCUUAGAACACACCUCCACACCCUCGUGUGUGUGGCUACCAAUGUAUUCA-CGAUUUAGUUGUAGUGCCAGAAAAACCAACUGUGCCGCA
+                           ........................................................................................................................
+
+                           -----------------(((((.(((((.------...................))))).-)))))......................................................
+NW_021705781.1:65798-66371 -----------------CCAAGAAUCAAC------AGC----AAACAACU---GUGUGUU-UUUGCACGUCUCCACUGGUAGGAAAAACCCCAACUCCUCUUCUGUCAU---GGCAUUCU
+NW_021705755.1:10160-10793 -----------------GUUGAGGAUAAU------AUGAGAAAAAAAAGUGGAAUUUUCC-UCGAC-------------------AAACCGCAACUCCUCUUCAGCAGUGCGGAGACGUC
+NW_021705918.1:28921-29239 -----------------GAAAAAAAAAAU-------------------------CCUUUU-UAUUCAAU---------------------------------------------------
+NW_021705860.1:37802-39002 CACGUCAUC--CUCACCGGUUGAAGCGGCGUCGCAGGAA---------------UCGCU-GCAACCGCAGAAGC---AGCCGCCGCAAGAGCAGCAACAACUUGUCA----UUCGACA--
+NW_021706144.1:1909-3022   CCAGUCGAU--GGUGGGCCUUGAGGUUC-GUGGCAUC-----------------GAGCU-GCAGGGC-AGCCCG---UGCGUCCGCAGCGGCGGCUUCGUUUUUGC-----CGAGACGGU
+NW_021705798.1:28511-29897 UUCUCCUUCAAAAACCGGCGUG-CGCUGGCCCACA-------------------CAGUC-GUACGCAGUGCACU---UCAGGCCGCCUA-----CCACAAUUGCCGU----CGAGACAUC
+NW_021705745.1:83190-84432 CGCGCGGACGGAGCCACUUUUGACGUCG------AAGCA---------------CGACC-GCAAGCA----------UGCUGCUCUUCCACCUGUCCUUUCCGUGCUUCCCCUUCCUCGU
+NW_021706084.1:17102-18440 --------------GUGGCUUGCCUGUGAGCAUCUCAGC---------------CACGGUGCACCCCACGGACCAAACAUCGGCCUUGUAGCUGUACCCUUCGCCGCUGC----------
+NW_021705786.1:5861-6767   ----------------CUGAACGUCGCACUCCGC--------------------UGCGA-GGUUCUGCAGGAACUCGGG-----------------------CUUCGACAACAUGUUGGU
+NW_021706014.1:2681-4634   AACUCUGAGGCAGGACGGCCCUCUUUUUCAUAGGUAUCAUAAAGCCGAAGAAAGGAAAAGUAGUGCUCGCACCGACUCGUUUGAUGACUCGGCUUUCGCUUCGCGAGGUCGGGAAACGUC
+                           .................(((((.(((((..........................)))))..)))))......................................................
+
+                           ---------------------------------------------------------------------------------------------------------......((((.....
+NW_021705781.1:65798-66371 ---------------------------------------------------------------------------------------------------------UUGCAAGUGCCUUGU
+NW_021705755.1:10160-10793 ---------------------------------------------------------------------------------------------------------GUUGAAGGACCUCCU
+NW_021705918.1:28921-29239 --------------------------------------------------------------------------------------------------------------AGUUCCUUUA
+NW_021705860.1:37802-39002 GGA--AGACA-------------------UACGGGACGAGGACUUUCA----GCGGCUAGA-GGUGU---------------UGGGUGAUGGU-UCAUACUCUGUUGUGGUUGCCGCCCG
+NW_021706144.1:1909-3022   GGU--GGCAA----------------------AGGCUGCGGUUGAGCA----GUGCGGAGA-GUCGC---------------AG----------CGCAG---UGACUGCGGCCUCGUUCG
+NW_021705798.1:28511-29897 UUU--GUGGC-------------------CUC------CUCAUUUGAU----GCGGCUGAG-GGGGU-----------------GCCUGUGUA-CAGCGACACCAUCGCGGGGGCGUU--
+NW_021705745.1:83190-84432 GAUUCUGCAC----------------------GGACGGUUCAGUGGCA----UCGCAACGG-GCAGC---------------UGGCAGUGGUA-GGUGGCAACCACCACUUGUACCUUUU
+NW_021706084.1:17102-18440 ------CGGU-------------------CACGUCUACCACCUCCGGCGCCAUCCAGUAU--GGGGUGCCAAUAACGGUCCGGCUCUGUGCCA-CGGCGUCCGAGAGUCGUCUGGCCGCG
+NW_021705786.1:5861-6767   GGAGUUGGGG-------------------UACUGGUUCAUGGAAGGCCACACCUGGUUGUUCGGCGUUCCCAGAAAACGAAA-------AAUGCGCAGCAACUGAUCUGCGUCAUUUUUU
+NW_021706014.1:2681-4634   CUGACCUCGCUAGGAGACAAGGAUAAAGAUAGGGGAGACAGGAACCUCGAGACCGUCCGGUUGGCGG--------------AUGCAUUAAGGAUGGCUCGCUUUGAGGCCUUGCGAUCCA
+                           ...............................................................................................................((((.....
+
+                           ......))))..............------------------------------------------------------------------------------------------------
+NW_021705781.1:65798-66371 UCAGCAGCACCACCGUCG-GCCAG------------------------------------------------------------------------------------------------
+NW_021705755.1:10160-10793 C--GUUGUCCGCCC------CCCG------------------------------------------------------------------------------------------------
+NW_021705918.1:28921-29239 UUUCAGCAGCACGCAUUACCCCCG------------------------------------------------------------------------------------------------
+NW_021705860.1:37802-39002 UCAUUUGCCGACCCA----------GCAG--CUGGUUGCACUGA------------------------AGGAACUCUCGCGACGAC-----------GCCUGAAGGAGUUGGAGC--UGG
+NW_021706144.1:1909-3022   GCA--GGAGGUCCCU----------GCGGCCCUCCGUG---AGU------------------------UCGACGGC-CUCGUCGUA-----------GGCC----UUCACGGCCGCCUUG
+NW_021705798.1:28511-29897 -------UCUCUGCA----------ACACCGUCAAUUCCGCCGA------------------------CCCAGUGCUUUACGCGUC-----------GG---------------------
+NW_021705745.1:83190-84432 CCA----UGCAGCCG----------GCA--AGUUUGUGGA----------------------------------GCAGCUCUCCAA-----------GAC---AGAUGUGGAGAAACGGG
+NW_021706084.1:17102-18440 CCAAAGUCCACAAGUUUAAUUUGCGACUCCAGUUUUGGAUCGCU------------------------UGAGGUGUCUACAAGAA------------GGUUAUCGCCCUUGAUGUCGCGG
+NW_021705786.1:5861-6767   CCAGCG----------AAUAGUGGGGCGCCAAUGGCCA------------------------------UUUCCG----------------------------------------CAAAGA
+NW_021706014.1:2681-4634   AACUCGUGGCAUGCA----------UCGUUACCCGACGGAUGAUAUCAAUAACAGGCACGCUGCCGUCAUUCCAGCGCUCGUUGCACGAGACCAGGUGCCCCCCAAACUCCGUCACAUCA
+                           ......))))..............................................................................................................
+
+                           ----------------------.....................((((((((....))))))))......................-----------------------------------
+NW_021705781.1:65798-66371 ----------------------UCGCGGCAUGCCCCAUCGGAGCCCUUCAGUCUACUGAACAUGACAGACGCCAUAGGGAGCAAG-----------------------------------
+NW_021705755.1:10160-10793 ----------------------CUUCCGAAUGCGCUCGCACAGUUCCUCCAUCGAUGGGGGAG-------------UAACAAAAA-----------------------------------
+NW_021705918.1:28921-29239 ----------------------UCUUAAUAU----CCUCUGCAUCCAUUUCAGGUGAAAUAGGGU-------------------------------------------------------
+NW_021705860.1:37802-39002 AGAAUCAGUUGCAGUGGGAGA---UCAACGUUCACCGUACGCUGCGCCAUCCCAACGUGGU-C---AGGAUGCUGAG------------CUACUACGUC----ACCCCAC-------AGA
+NW_021706144.1:1909-3022   AAAUCACCGGCGGUGAAAAAGCUGUUACCGUUCACCU--UCGCCUGCUGUGCCUUCGCGGUAU---CCGCUUCGCUG------------AU-GCGCUUC----GUGUCAC----------
+NW_021705798.1:28511-29897 ---UCCUGUCAAGCUUCGUUGCUUACGGUGUGGACUUCGCUGCGCCGCGUCACAGUGCGGGUG---AACACGCGGCC------------GCGAGCAACC----AGGCGAC-------GCC
+NW_021705745.1:83190-84432 UCGAGCACACAGCACUUGGGGCCUCAGGCGAAGACGUUGUAAUUGUGGGACAUCAGUCGUACACACCAGAUCUAUUG------------GUGCUCGCUA----CGGAAAA-------ACU
+NW_021706084.1:17102-18440 UGUAUAAUGCCCUGCGUGUGCAGGUAAA-GCAGACCCUUGAGCAGCUGCUGGGUCCAGCUUCGCACCACGGCAGGAU------------GCAAUGGUUUAAAAACUUU-C-------ACU
+NW_021705786.1:5861-6767   UACACCCGACGGACCAUAU-GUCUACAGG------CGUGCCAUACUGUGUGGAGCCAAGCAGUACA------------------------------------------------------
+NW_021706014.1:2681-4634   CUCAUGGUGGCUGCCUCUGUGUUUCCUAUCAUGUUGUCGUAGAGGUCUUGGGGCACCAGGGCGCGAAUGGCGGUGAUCAAAGGCACCAACCAGGCCUUGCAGUAGUCUACCACCAUUUCC
+                           ...........................................((((((((....)))))))).........................................................
+
+                           ------------------------------------------------------------------------------...............................-----------
+NW_021705781.1:65798-66371 ------------------------------------------------------------------------------UGCGGCGACAACGCAUCCA-----------------------
+NW_021705755.1:10160-10793 ------------------------------------------------------------------------------UGUA----CAAUACAUUCAGCGACUCUUUCA-----------
+NW_021705918.1:28921-29239 ------------------------------------------------------------------------------------------------------------------------
+NW_021705860.1:37802-39002 ACGUUGUGCUGGUGCUGGAGUUGUG-UCCC--------------------------------UGUGGGA---CGCUUCUGCAG-AAG---------------------------------
+NW_021706144.1:1909-3022   -------UCUCGCGCUGCAUCACUG-CCGAGGUCAUCUGCGC-------------------UUGGUUGG---CGGUGUCGUAGCUAG---------------------------------
+NW_021705798.1:28511-29897 ACCGC---UUCCUUUGCUAGACACC-GCGCUCUACUGCCUGCAUGAGACAGCAAAGACGAUUUGUGCGC---GGCCUGCGGCGCCAC---------------------------------
+NW_021705745.1:83190-84432 GAUU------CCGUUGAGGUUUCU------------------------------------UUUUACGCG---UGAUUCCGCCGUAUA---------------------------------
+NW_021706084.1:17102-18440 AAAGAGGACAAGGGCCCACCACCGAUGUAUUCCAU--------------AAACAUACAAAUGGUGGUAC---UCGGUGAAUCGUAGC---------------------------------
+NW_021705786.1:5861-6767   ---------UCCGGGGAGCGGUACCAGAGCGUCACCAC----------------------------CUCAUGCGUAAACUUCUUAAC---------------------------------
+NW_021706014.1:2681-4634   AAUCCAUUGUCGAGGGCCUGAUUGCGAAGAUUCGGGAUUAUGGGGUCCAUCCCUCGCUGCUCCUCUUCAUAGGCUUCGCGGAGCCACUCGGUAACCAUGCAACCGGCUAAAUUAAAAAAC
+                           ........................................................................................................................
+
+                           -----------------------------------------------------------------------------------.....((...(((((......................
+NW_021705781.1:65798-66371 --------------------------------------------------------------------------------------CAAGGAAGAUUAAGGCAGGCUUGACACC---CUC
+NW_021705755.1:10160-10793 -----------------------------------------------------------------------------------UAUUGCGU-AUCUUUUGAACACCUUUAAUGUCCACCU
+NW_021705918.1:28921-29239 ------------------------------------------------------------------------------------------------------------------------
+NW_021705860.1:37802-39002 -------CUGAGGGCAA---------------------------U-GCCGCAAGGAAGGUUUGAUGAACGACGGGCGUCGCGGUA-------UGUGCGACAGGCC---GCACGGGCGCUA
+NW_021706144.1:1909-3022   -------UCGUGGGCGG---------------------------U-UCCCGCAGGAGGGCUUCGU----AGUGGGCGA--GAGUG-------CAGUCGAC--------------------
+NW_021705798.1:28511-29897 -------UUGAGGAAAA---------------------------UAUUACUGAGCAUAAUG--AAAACGGCGACCCCGCACCAAAGCAAGAUCAAGGCAGUUUCC---A-------GAAU
+NW_021705745.1:83190-84432 -------UCG-----------------------------------------------------------------CAAUGGCC-GACGGGAC--AAUGGAAAGC-------AUGACUUUU
+NW_021706084.1:17102-18440 -------ACACACCCUU---------------------------AAAGGUGCAG---AGAUUCUUGUGAUGCAGACGCCGCAUAAU--------GUUAAUCUCCC---GCGACAGGGAGA
+NW_021705786.1:5861-6767   -------GGGAAUGCCA---------------------------AACGCCCGCCCCAGGCCA--------------AAGUCCGC-CAGCUUCACAUUCUUCUCAC---GC------GAGA
+NW_021706014.1:2681-4634   UGCGCGUGUGGGCGCAAAGUCAAGGCGUUAUCUGCCAGAAUAAUUAUAGCUGACAAGAGCAGCGGUACAUCCUCUAGUUCCACCACAUUU---GCGGCUGCUAUCUUUUCAAGACCGUGC
+                           ........................................................................................((...(((((......................
+
+                           .)))))))----------------........................((...((((((((.....--------...))))))))...))------------------------------
+NW_021705781.1:65798-66371 CUUGUCUU----------------UGAUGGAGU-UCUCCCAGGAGCGAAUAAACCUCUC---------------CCACAGCGAGGCCAGU------------------------------
+NW_021705755.1:10160-10793 CAAGGAUG----------------CAAACCUUUCCGGCGUCCCGAACCACAUUUAUCGCAUUCACA--------CUAGUGCCAUACAAAU------------------------------
+NW_021705918.1:28921-29239 ---------------------------------------------ACAAAAGUAUCAUGGCACGAA--------CGGGUCGUGGUACAAA------------------------------
+NW_021705860.1:37802-39002 GCGUAUCUG---CACGGACAU-GGCAUUGCCCACCGCGACU-------UGAAACUAGAGAA-------------CGUUUUUUUAGAUGCG--CGG------------------GGUGUGG
+NW_021706144.1:1909-3022   GCGGCUCCA---C-UCGUCGA-GGGCGGGGUCAUCGUGGCUACAGAGAAGGAAGGCGUCCC-------------CG-CGGAUGUCGCGCU--GCA------------------CGAGCGU
+NW_021705798.1:28511-29897 GGUUUUCUUACGCUGGUGAAUAGUUACACGUUGUGUUCGCUUCUGAGGUU---CUUUGCCG-------------AGGAGGAGGAGGAGGG--GGG------------------GGAG-GU
+NW_021705745.1:83190-84432 ACAUCACCAACGUGGCAUUGCCGGCA---ACUGAUUUA----------------UCCACCA-------------GGCUGGUGG------C--UAU------------------AUCAAGU
+NW_021706084.1:17102-18440 CAAGCUC-----CUUGACACUGAAUACACCUGUUUUCUUCCCAAUCUCCACACACUUCACGGCGUAGAAAGAGCCAUCGUUGAGUAAACCCAAGU------------------AAACAGA
+NW_021705786.1:5861-6767   UGAGCAAGUUCGGCGGCUUG-------AGGUC----------------------------------------------------------------------------------------
+NW_021706014.1:2681-4634   AGCAGCAAGUCACGUAAACGCGGG----GCUGUGAUCAGUACAGUCUCAAACAGUAACUCUCUCAAAAACUGAGAAAAGGGUUGAGUGCCACUAUUUGCAAAGAGCUUAAUAAAGCAAUU
+                           .)))))))........................................((...((((((((................))))))))...))..............................
+
+                           ---------------------------------------------------------------------------------------------------------...............
+NW_021705781.1:65798-66371 ---------------------------------------------------------------------------------------------------------UCCCCGCCCACCUCG
+NW_021705755.1:10160-10793 ---------------------------------------------------------------------------------------------------------U-CCCAUGCACCUCG
+NW_021705918.1:28921-29239 ---------------------------------------------------------------------------------------------------------GCCCAACAUUUCAGG
+NW_021705860.1:37802-39002 CAAGGCUGGGAGAUUUUGG----------------GUGGAGUAAGGC--CGUUGAGGAGC---------------CGAC----GGUGAAGCAC-------GAC----CCCGCCCCUCAUU
+NW_021706144.1:1909-3022   GCUGGCACGGGA----GUU----------------GAGGGCGAGGUC--CUUAAAGCGGCCACUGU------CGUCGAU----GUAGAGGGAA-------GUG----CCCACAAACC--U
+NW_021705798.1:28511-29897 GGUGGUGGAAGCAAAAUGGAAUGAGGCGAAGCCAAGCGCUGGGGGAA--GGA--AGCG-----UGA------CGCAGCC----GACUCCUCAC-------UUCGAGAGGCGCCCUUGCGU
+NW_021705745.1:83190-84432 GGAGCCACCGUGACAAUUG------------------GGUCCUUGUCAUCUGGUAGUGUCACCCAU------CGCAUCG----AGAGUAGCGAUCCUGUUGUGGAUAUCUGCUUUUCAGG
+NW_021706084.1:17102-18440 GCCGUAUGUCCCACGGCCAAUCAACAGACCACGACGCCACGAUCGGAGCACAGGUGCGUCGCUCGUUUGCAGCAUCUCC----GGAGUGAUGCCCUCUGGGCUCAGUGUGGCCCACGA--
+NW_021705786.1:5861-6767   -----CCGGUGCAGAACGUUUCGAUCGUGGCAAAAGUGCACGCCAUUCAGCAGGUCCCGCA---------UAAAGUCCU----GAAUGGUGGC--------------CGCAUCCAGGUUC
+NW_021706014.1:2681-4634   UUCCUCACGGUUUAAAUGGUAGAGAAACGCCGUGAGACUCGCCGACUGCUGGGUAGUUAUGUCC-----CCAUACACCCAAACGAGGGGGUGAUCAAUGCG---------GGCCAAAAAA
+                           ........................................................................................................................
+
+                           ......................................................------------------------------------------------------------------
+NW_021705781.1:65798-66371 CGG---------AGUU--CCACUGUGCGGGGCAAGACC--------------UU------------------------------------------------------------------
+NW_021705755.1:10160-10793 CAGACCUCAAUAAACUCACCGUUGUCCCGCAUGCUGUCCACCGUGGCACGAUCA------------------------------------------------------------------
+NW_021705918.1:28921-29239 GUCGA-------UGCUUAUGACGUCGCA--------------------------------------------------------------------------------------------
+NW_021705860.1:37802-39002 CGGAC--------------AACUG-----------------CGGCACU------ACCUC--A-----------CACAGUGCGGGCGGCGAUGA----UGCGAAUG---------------
+NW_021706144.1:1909-3022   GUUGC--------------CGCGCC-CUGGCAUGA--GCAACGGUAUG------AUCUCGAA-----------GGAAGUCUGCUC------------CAGGUAGU---------------
+NW_021705798.1:28511-29897 UACACCACAGCAGUUCUUUACCAGU-UGUUUAGUA--UGAAACUUGGUCCACGUGCGCUAGA-----------GGGCGCAUUGCCAUCCUUGU----CAGCAUCA---------------
+NW_021705745.1:83190-84432 AGGUCCACAUGAAGUAACUAUUGCCACGCGUAAUAAACUGACGGUGUACGAUUUACGCAAGACUGCUCAGUUUCUGUGUGAAACCUGUGACGA----UGGCACCG---------------
+NW_021706084.1:17102-18440 ------ACUAUAUCUUUCCUCCUCCUCCGGCGUCACGCGAAUCGUGCUGUCGUCA-------------------GCUGCAACGUCUUGCAGGUC---GUCGUCAG---------------
+NW_021705786.1:5861-6767   CCUUCCUCCCGAUCCAUGUACUUCUUCAG---------------------AUCAAGCUCCAUGUACUCAAACACGAGGGUGAGACGGU----UC---UCACU------------------
+NW_021706014.1:2681-4634   ACGUU----UGAUACCCCCGGGUGCACAAAGCUCAGAGACAGUGUGGCCAAAAAAGCCACAAUUACUUCGUUGUCGGUGAAGAUCAGCGUCGCCGGUUUUUCUCGCAGGAUGAGGUAAAG
+                           ........................................................................................................................
+
+                           -----------------------------------------------------------------------.((((.................))))-----------------------
+NW_021705781.1:65798-66371 -----------------------------------------------------------------------UUGCUGCGGCGCCUUAAUGCCGAGUA-----------------------
+NW_021705755.1:10160-10793 -----------------------------------------------------------------------GAAAAGUG-AUACUCGCGUCCAUUUU-----------------------
+NW_021705918.1:28921-29239 ------------------------------------------------------------------------------------------------------------------------
+NW_021705860.1:37802-39002 --------U-----GUGUGGUGGCGGCGGCCGGCUAACGGUG----UGUGGCACG-CUGGACU---------AUUUGU---------CCCCGGAAAU----------------GCUGUC-
+NW_021706144.1:1909-3022   --------C-----CU-CGAUCAUUGCG---------------------UGCUGC-UGCUGCU---------CGCU--------------CGUGGCG----------------GCGGCA-
+NW_021705798.1:28511-29897 --------U-----CUUCGGUGCC-AAUGUCAUCUAUUAGCU----CGUUUUUCG-CCUUACUGUUUAAACGGGUGAUCGAUUAUUGCUCCUUCGCC----------------GGUGUG-
+NW_021705745.1:83190-84432 --------UAGACAUCACAACGUUUGCCACCUCCGACUCUGC----CUUGGCUGU-AGGGUCUAAAAGCGGUAUUGUUAAUAUUU-------ACAAC----------------AAGGGC-
+NW_021706084.1:17102-18440 --------UUUUCAU--CGGCAGCUGUGGCAAUGAAAUGGUC----GAGGGUUGU-GGUGAU-------ACGGCAG-----------CCUUUGGUGC----------------UGUCUC-
+NW_021705786.1:5861-6767   ------------------------------------AUGGCA----CACGUCAAGCAGCUUU-------ACAAU---------------GUUCGGAU----------------GACGAA-
+NW_021706014.1:2681-4634   CAUUUGCACAGAGUCGGCGGCGUGGAGGGCGUUGUGAUAGGCAUUAUCUGUAGCAUAACCCUCAAAGAGAGAGGAGAGGAAGCUCAGGAGCUUCUCCACAUCCAUCUGACUGCUGAAGGA
+                           ........................................................................((((.................)))).......................
+
+                           -----------------------------------------------------------...........(((((((..----------------..)))))))................
+NW_021705781.1:65798-66371 -----------------------------------------------------------AAUGCACCUCCUGCCCCUGC----------------GUUGGGGCGUCGUGGAUCGGACGGG
+NW_021705755.1:10160-10793 -----------------------------------------------------------CUUCACCUUCACGCGGCGCC----------------CUUGUUGUGU--GUGA--------G
+NW_021705918.1:28921-29239 ---------------------------------------------------------------------AAACUCCA-C----------------CUUGGGGUU----------------
+NW_021705860.1:37802-39002 ---UGGCAUGCCUCACACCUUUA-----------------AGACUGAU---GUGUGGUC-UCUUGGUGU-CAUGCUCGCG-----------------GAG-AUGC---------------
+NW_021706144.1:1909-3022   ---GCGGCAGCAGCAGCGUCUCC-----------------CUGCUGCUUCGCCUCCUUCAUCUUCGCCG-UGAGGUGUCGCGC--------------CAUCUCG----------------
+NW_021705798.1:28511-29897 ---AGGUGGAACCUCUACUAUGAGGUGGGAGUGGAAGCGGCGCAGAAGGCGCUUGCCUACGCCCCGCCCUUGCUGCGAGAGAC--------------GGCAGCGCUACUCGUGUCCUAUU
+NW_021705745.1:83190-84432 ---UCUGCAGGACCCGCGAAG----------------------ACUCUCA---------AGAACCUGACGACAAGCAUCA-AU--------------UGUUUGGC---------------
+NW_021706084.1:17102-18440 ---GCCAUAG---UCGAC-----------------------------------------------------AACACUGC---U--------------AGUGCGGUUGCCGUCGCCACCGU
+NW_021705786.1:5861-6767   ---GCUCUUUUAGUAG----------------------------------------------------------CGAGAUCUC--------------UCGG-------------------
+NW_021706014.1:2681-4634   AAAGUUUGCAAGCACGCUAGUACACACUGAAAGAAAGACUCUUCUUGGGUCCUUCAUCAACUCCCCGUUGAAAUCGGUCACGUCACGGCUGCUAAAAUCGAUGCUUUCCACUUCCUUCAC
+                           ......................................................................(((((((....................)))))))................
+
+                           .................((((..............----------------------))))........---------------------------------------------------
+NW_021705781.1:65798-66371 CCUGCAGAGUGCC----GCUUUCGCACAUGCAACU----------------------GAGCUGCCG--C---------------------------------------------------
+NW_021705755.1:10160-10793 ACGGA--AUAGCCAAAAUAAUCCGGAAACUCC-UU----------------------CAGCAAGCGGCC---------------------------------------------------
+NW_021705918.1:28921-29239 ------GGUUACACCAAGACU-------UUUCAGA----------------------UAUGCAUUCAUC---------------------------------------------------
+NW_021705860.1:37802-39002 --------UCACCGGCGCGCCCCC---------CU-----------------UUUACUGCGUGUCACACCAGGGCACCCUCGA-CGCAAUUCGCGAGGCGGACC----------------
+NW_021706144.1:1909-3022   ------------CGCCGCUGAUCC---------UC-----------------GGAAAGCAGCUGCCGGCGAAAGUACUGCUGG-AGGGAGGCGCGAAACUCCUC----------------
+NW_021705798.1:28511-29897 GCCGCCAAUUCCCUCCGCUGUAUCAGUCG---GUU-----------------CUGAAGCAGGUGGGGGCGGAGGCUCACUUUAUCCUGGAUCAGCUGGUGCACU----------------
+NW_021705745.1:83190-84432 -------AUUUGGAGAACGCAGCAACGGUGACGCG-----------------GUGCUUGCGUACUCGACCAAGGCCCAGAAGGGUGGAUUUCGUCUCGC---CG----------------
+NW_021706084.1:17102-18440 CUUUGCUACCCUCUCCUCCCUCGCGGAAGGUCCCU-----------------GUGGUGUCAAGGCCGCCC----CUCAAUGGAGUGCGUCUAUCGUUAACGGAG----------------
+NW_021705786.1:5861-6767   ----------AUGGCAGUGC-----------------------------------ACGGCACACCCUCC-------UCCUCCGUGUCAAGACG---------------------------
+NW_021706014.1:2681-4634   AUAUUUCAGUGUCUGAUGCAUGACCCUGUUCAUUUGUCCAAAGGUUUCGGUGGGGUCUUGCAGGAGCGGGACGUCACGCUUCAGGUUGGUUUGAAUACUAGCCCAGUUGGCGGGAUUAUU
+                           .................((((....................................))))...........................................................
+
+                           ---------------------------------..........(((((-------.........)))))....................................---------------
+NW_021705781.1:65798-66371 ---------------------------------AACAGGU-UUGUUUU-------UCCCGAGCCCGAGGAGCCAAGCACGUAAACGACGAGCGAG-------------------------
+NW_021705755.1:10160-10793 ---------------------------------AAGAAGCGCUCCUUU-------CCCUACGCCAGAGGGGCCACAGACAGCAAUUGCCUCUAAUGGAAACUCAC---------------
+NW_021705918.1:28921-29239 ---------------------------------ACAUCGGGGUUGCUU-------UC----GAUGGGCAGCCAACA--------------------------------------------
+NW_021705860.1:37802-39002 ---------------CUCACUUGGGC-GACGA-----------CGUUC-AUAUC--------------U---------CAUCACUGGCCCGUGAA-----------------UUGGUGCU
+NW_021706144.1:1909-3022   ---------------AUCGCUGCCGCCGGCAA-----------ACGUC-AUCUCGCGCGGC-GCGGCGU---------UGUCGUCGGCGG--GAA-----------------UCAGCACA
+NW_021705798.1:28511-29897 ---------------CGAAGUUGUUUCACUUU-----------CCAUCGAGCUCCCACGAG-GAGAUGG---------AGAUG---GAACGUUAC-----------------GUGUU---
+NW_021705745.1:83190-84432 ---------------UGCUCCCAGAGUGCCGUGUCGUGCCGU-CCUUUCCUGCUGUUUCGC-AGCGUCA---------CCAGUUUAUUCAGAGUU-----------------UGGCCUUU
+NW_021706084.1:17102-18440 ---------------CACCUCGUCUCU-------UUUCGCCC-GCCCGAAAAAGAUUUCUUCUUCGUGC---------CACACCUGGAGCAGAAC-----------------UUCGCCGU
+NW_021705786.1:5861-6767   ----------------AAUCCGCUUCAGC---------GCGA-CGGUGGCACCGGUGGCGGUGUCACGG------------GCCCUGAACACGAC-----------------ACCAUACG
+NW_021706014.1:2681-4634   GUCCUGCAAAUUGAACUUCUCCGCCCUGCAGUGGCUCGUAGCGUCAGCAAAAAGAAGACUCCGCGCAGGAGCAUGACCCAUGAAGAGGGCGUCACCAAAACACCUCCCUUCUCUUUCCCG
+                           ...........................................(((((................)))))...................................................
+
+                           ------------------------------------------------------------------------------------------..........
+NW_021705781.1:65798-66371 --------------------------------------------------------------------------------------------CUUUUCAU
+NW_021705755.1:10160-10793 ------------------------------------------------------------------------------------------UCCUUACCAU
+NW_021705918.1:28921-29239 -------------------------------------------------------------------------------------------CUUCGACAU
+NW_021705860.1:37802-39002 GACAAUGCUGCAGAAGGACCCGGACGCGCGUCCAACAAUGGCAG-AGGUGCUG-----CAACACCCAUGGACGAGACCACACCGGGAGAAGGCGAAGUAA
+NW_021706144.1:1909-3022   UAC----CGGAAGAAGUUCACUGUGGGGCCUUGACCACUCAUCG-CGUGCCUUGC--CUGGGCGCACGGGAU-------------------------CAU
+NW_021705798.1:28511-29897 --CUAUGAUAAAAAAAGCAGGACGACGACGACGAACGACGACGG-CGGCGACGGC--AAUGCACCACGAGGCGGCAGCCAAGCGUGA-------------
+NW_021705745.1:83190-84432 GCCCCAACCGUUC------------------------CUGUGCU-UUCUGUCGGUGAAAAGCAGAAGGUCACGA------------ACUACGCGUUGUGA
+NW_021706084.1:17102-18440 UAACUUGAUGAAAUGGGCACCGCAGUGGUGACACAUCUGUGCCUCCGCCGCCUGCUUUUUGCAGCCAACGAUGCCCUCCGA----------------CAU
+NW_021705786.1:5861-6767   UCCCCUCACCAA-------------------------UCUUCUCCUGUCGCUCGUAGCGAGUGCC--------------------------------CAU
+NW_021706014.1:2681-4634   CACGCCUUUUUCAGGUUCCUCAUAGUGCGCGCUGAGGACGGCGG----UGGAGAGUUUCCCUAGGGCCGGUCGCUGCAGCCCAUUUUUUUUGUGAGGCAU
+                           ....................................................................................................
+
+
+NW_021705781.1:65798-66371 UCAGU---CGGA------------------------------------------------------------------------------------------------------------
+NW_021705755.1:10160-10793 UUAUUGCACGGAAUCCUGCCUCAGU-----------------------------------------------------------------------------------------------
+NW_021705918.1:28921-29239 UCACUGCAUGUAAAAUGGCCAUGGU-----------------------------------------------------------------------------------------------
+NW_021705860.1:37802-39002 AUGUGGCAGCUU---CACAACGUGCGCUUGCCGCCGCG-----------------GAGG------------------------UUGUGUGAC--GCAAAGCC----------GUUGA--U
+NW_021706144.1:1909-3022   UUAGGCAAAAAG---UUUGGAGAACUU-CUGCUUC-----------------------------------------------------UGCU--CCUUCCGG----------AGGGC--A
+NW_021705798.1:28511-29897 AUGGUGUGCAGAAACGGCAAUGCCUCCUCACAAUUUAGCGUCUCCUCCAUACAGCAGGA------------------------ACGUGAGCU--GCCGCAGCAACAGCAACAGCGGC--A
+NW_021705745.1:83190-84432 AU-GGCGUCUCGUGCUUGGGUGGACG--AUGCAGAUCACAACGCGGGUGAGGAGCUGCC------------------------AGGUUUUGU--GAAGCAG---UCUCAUGUGCUUCCCG
+NW_021706084.1:17102-18440 CUA-------------------------CUCCAUCUCUCCAAGAAUCCAGGGGUGCUGC------------------------AUGAGCUCC--UCCACGGU----UGGACGCUGCCCCG
+NW_021705786.1:5861-6767   UCAAAACUCC-----------------------------------------------------------------------------------------------AAGGAGAAGUAUGGG
+NW_021706014.1:2681-4634   UUAGGGUUUUUUUCC-----AGUAUGAUUUCCCCCGUAGACAGGGUUGCAACAGUUCAGCGUACGCCUCAGUCCCAAGGUGAAAUUAGAGGUAGGGACUUCAUUUCUAUCCCGGUCUCUG
+
+NW_021705781.1:65798-66371 -------------------------------GAACGCCAUGCUAAUGAGCCA----CUCCAUGACAUCCCCGAGCCCC--------------------------------AGCCCAUU--
+NW_021705755.1:10160-10793 ------------------UUACACAUGUUACACGUCUCAAACGUCUCGUCAAUAAUGCGCAGUAGCUUUUCGUACGCCACG--------------------------UCAAGGUCUUU--
+NW_021705918.1:28921-29239 ------------------AC--------------------------------------------CACAAGCGUUCCCAACG--------------------------GUUUGUC--UA--
+NW_021705860.1:37802-39002 GUCAC-C--------------------------AUU---------------------------ACAGGGGGGGUACACGCGAGGUGACGCGUGUCAC---------UCUUCUUUUG----
+NW_021706144.1:1909-3022   GCUGC-CCCCUCAG-----------------CGAUG---------------------------GCCUGGCGG----------AUGGCUGCGACGUCA---------CUGGCGGGCC----
+NW_021705798.1:28511-29897 GCAGC-AACAACAGG--C---------CGCACUGUU---------------------------UGGUUUGGAGCACCUUAUGACGGCCACGUAUCCGCCACCUAGCUUCGAGCCGAGCC-
+NW_021705745.1:83190-84432 CAUGG-GCCACCACG--UCCACGCAUGCAGACCGCA---------------------------GCGUUAUUGGC------------------------------GACAAUGGUGCAGCCA
+NW_021706084.1:17102-18440 GAUCU-CGCACAAAGCACCUACGCAUAAAAUCCAGG---------------------------CACCCCGGCGUCGCCUCCGCCUCCGGAAUCUC----------UGUCGGUC-------
+NW_021705786.1:5861-6767   UGCUCAAGCGCCUGAGCAGCUGUUAGGCGUUCGCUG---------------------------GGCUCGU-----ACUUCAGCAGGCGCCGAAGGAGAUCAAUACCCUCCGGGCCCAGCU
+NW_021706014.1:2681-4634   UCUCGUUCGGCAUACAUUUCCAUCAAGCGCAAGAUAAAACCAUCCGUCUGCCGUCCGUCCCGCAGAGGAGAGGCUAUCACUUCCGCCGUUGUUGGCG--------CCUCUUCUUUUUCCA
+
+NW_021705781.1:65798-66371 ------------------------------------------------------------------------------------------------------------------------
+NW_021705755.1:10160-10793 ------------------------------------------------------------------------------------------------------------------------
+NW_021705918.1:28921-29239 ------------------------------------------------------------------------------------------------------------------------
+NW_021705860.1:37802-39002 -------CAGG----------UGGCGGACA------------CGAAGACGCGUCGGAGUCGGAGCCAAACUCGCAGGC--GUCAUUGCAG----GCCUGCUUUGUCGCACCGCAGCCAUG
+NW_021706144.1:1909-3022   -------CGCC----------CAGCUG-CU------------CAAAGGCGU-UCAGCGCC---------------UCC--GCCGCUGCGGCGUAGUCACGUCCGCCGCAAAGGGCGACUG
+NW_021705798.1:28511-29897 ---GCACAGUG----------CUGCUGC------------------GACGCAAGGUCGACGUCAUUAACUGCAUCACCAAGCGAAUUCGGCGUAUCAGUGAGGGCCUCACAGUUGGCAGU
+NW_021705745.1:83190-84432 GAAGUGAGGUC----------GUCGUCUCU------------UCCUCAUCCGCACUGAUGAUGACAGCCCAAAAAA------------GAUUUCGUGAUAAGGACCU-GGACGAACUUCU
+NW_021706084.1:17102-18440 -------CGUC----------CUUCGCCUG------------CGCAAUCAUCA---UGAUGGCAGCGGGCGCGUUCAC-----------------CUGACUCGGCCACG-----------
+NW_021705786.1:5861-6767   UCGCGUACGCG----------GGCACGGUG------------CGAAA-------------------------------------------------------------------------
+NW_021706014.1:2681-4634   UAAUGAGCUUCGCAAUCUCCUCACAGUCCUUCUUAGAACACACCUCCACACCCUCGUGUGUGUGGCUACCAAUGUAUUCA-CGAUUUAGUUGUAGUGCCAGAAAAACCAACUGUGCCGCA
+
+NW_021705781.1:65798-66371 -----------------CCAAGAAUCAAC------AGC----AAACAACU---GUGUGUU-UUUGCACGUCUCCACUGGUAGGAAAAACCCCAACUCCUCUUCUGUCAU---GGCAUUCU
+NW_021705755.1:10160-10793 -----------------GUUGAGGAUAAU------AUGAGAAAAAAAAGUGGAAUUUUCC-UCGAC-------------------AAACCGCAACUCCUCUUCAGCAGUGCGGAGACGUC
+NW_021705918.1:28921-29239 -----------------GAAAAAAAAAAU-------------------------CCUUUU-UAUUCAAU---------------------------------------------------
+NW_021705860.1:37802-39002 CACGUCAUC--CUCACCGGUUGAAGCGGCGUCGCAGGAA---------------UCGCU-GCAACCGCAGAAGC---AGCCGCCGCAAGAGCAGCAACAACUUGUCA----UUCGACA--
+NW_021706144.1:1909-3022   CCAGUCGAU--GGUGGGCCUUGAGGUUC-GUGGCAUC-----------------GAGCU-GCAGGGC-AGCCCG---UGCGUCCGCAGCGGCGGCUUCGUUUUUGC-----CGAGACGGU
+NW_021705798.1:28511-29897 UUCUCCUUCAAAAACCGGCGUG-CGCUGGCCCACA-------------------CAGUC-GUACGCAGUGCACU---UCAGGCCGCCUA-----CCACAAUUGCCGU----CGAGACAUC
+NW_021705745.1:83190-84432 CGCGCGGACGGAGCCACUUUUGACGUCG------AAGCA---------------CGACC-GCAAGCA----------UGCUGCUCUUCCACCUGUCCUUUCCGUGCUUCCCCUUCCUCGU
+NW_021706084.1:17102-18440 --------------GUGGCUUGCCUGUGAGCAUCUCAGC---------------CACGGUGCACCCCACGGACCAAACAUCGGCCUUGUAGCUGUACCCUUCGCCGCUGC----------
+NW_021705786.1:5861-6767   ----------------CUGAACGUCGCACUCCGC--------------------UGCGA-GGUUCUGCAGGAACUCGGG-----------------------CUUCGACAACAUGUUGGU
+NW_021706014.1:2681-4634   AACUCUGAGGCAGGACGGCCCUCUUUUUCAUAGGUAUCAUAAAGCCGAAGAAAGGAAAAGUAGUGCUCGCACCGACUCGUUUGAUGACUCGGCUUUCGCUUCGCGAGGUCGGGAAACGUC
+
+NW_021705781.1:65798-66371 ---------------------------------------------------------------------------------------------------------UUGCAAGUGCCUUGU
+NW_021705755.1:10160-10793 ---------------------------------------------------------------------------------------------------------GUUGAAGGACCUCCU
+NW_021705918.1:28921-29239 --------------------------------------------------------------------------------------------------------------AGUUCCUUUA
+NW_021705860.1:37802-39002 GGA--AGACA-------------------UACGGGACGAGGACUUUCA----GCGGCUAGA-GGUGU---------------UGGGUGAUGGU-UCAUACUCUGUUGUGGUUGCCGCCCG
+NW_021706144.1:1909-3022   GGU--GGCAA----------------------AGGCUGCGGUUGAGCA----GUGCGGAGA-GUCGC---------------AG----------CGCAG---UGACUGCGGCCUCGUUCG
+NW_021705798.1:28511-29897 UUU--GUGGC-------------------CUC------CUCAUUUGAU----GCGGCUGAG-GGGGU-----------------GCCUGUGUA-CAGCGACACCAUCGCGGGGGCGUU--
+NW_021705745.1:83190-84432 GAUUCUGCAC----------------------GGACGGUUCAGUGGCA----UCGCAACGG-GCAGC---------------UGGCAGUGGUA-GGUGGCAACCACCACUUGUACCUUUU
+NW_021706084.1:17102-18440 ------CGGU-------------------CACGUCUACCACCUCCGGCGCCAUCCAGUAU--GGGGUGCCAAUAACGGUCCGGCUCUGUGCCA-CGGCGUCCGAGAGUCGUCUGGCCGCG
+NW_021705786.1:5861-6767   GGAGUUGGGG-------------------UACUGGUUCAUGGAAGGCCACACCUGGUUGUUCGGCGUUCCCAGAAAACGAAA-------AAUGCGCAGCAACUGAUCUGCGUCAUUUUUU
+NW_021706014.1:2681-4634   CUGACCUCGCUAGGAGACAAGGAUAAAGAUAGGGGAGACAGGAACCUCGAGACCGUCCGGUUGGCGG--------------AUGCAUUAAGGAUGGCUCGCUUUGAGGCCUUGCGAUCCA
+
+NW_021705781.1:65798-66371 UCAGCAGCACCACCGUCG-GCCAG------------------------------------------------------------------------------------------------
+NW_021705755.1:10160-10793 C--GUUGUCCGCCC------CCCG------------------------------------------------------------------------------------------------
+NW_021705918.1:28921-29239 UUUCAGCAGCACGCAUUACCCCCG------------------------------------------------------------------------------------------------
+NW_021705860.1:37802-39002 UCAUUUGCCGACCCA----------GCAG--CUGGUUGCACUGA------------------------AGGAACUCUCGCGACGAC-----------GCCUGAAGGAGUUGGAGC--UGG
+NW_021706144.1:1909-3022   GCA--GGAGGUCCCU----------GCGGCCCUCCGUG---AGU------------------------UCGACGGC-CUCGUCGUA-----------GGCC----UUCACGGCCGCCUUG
+NW_021705798.1:28511-29897 -------UCUCUGCA----------ACACCGUCAAUUCCGCCGA------------------------CCCAGUGCUUUACGCGUC-----------GG---------------------
+NW_021705745.1:83190-84432 CCA----UGCAGCCG----------GCA--AGUUUGUGGA----------------------------------GCAGCUCUCCAA-----------GAC---AGAUGUGGAGAAACGGG
+NW_021706084.1:17102-18440 CCAAAGUCCACAAGUUUAAUUUGCGACUCCAGUUUUGGAUCGCU------------------------UGAGGUGUCUACAAGAA------------GGUUAUCGCCCUUGAUGUCGCGG
+NW_021705786.1:5861-6767   CCAGCG----------AAUAGUGGGGCGCCAAUGGCCA------------------------------UUUCCG----------------------------------------CAAAGA
+NW_021706014.1:2681-4634   AACUCGUGGCAUGCA----------UCGUUACCCGACGGAUGAUAUCAAUAACAGGCACGCUGCCGUCAUUCCAGCGCUCGUUGCACGAGACCAGGUGCCCCCCAAACUCCGUCACAUCA
+
+NW_021705781.1:65798-66371 ----------------------UCGCGGCAUGCCCCAUCGGAGCCCUUCAGUCUACUGAACAUGACAGACGCCAUAGGGAGCAAG-----------------------------------
+NW_021705755.1:10160-10793 ----------------------CUUCCGAAUGCGCUCGCACAGUUCCUCCAUCGAUGGGGGAG-------------UAACAAAAA-----------------------------------
+NW_021705918.1:28921-29239 ----------------------UCUUAAUAU----CCUCUGCAUCCAUUUCAGGUGAAAUAGGGU-------------------------------------------------------
+NW_021705860.1:37802-39002 AGAAUCAGUUGCAGUGGGAGA---UCAACGUUCACCGUACGCUGCGCCAUCCCAACGUGGU-C---AGGAUGCUGAG------------CUACUACGUC----ACCCCAC-------AGA
+NW_021706144.1:1909-3022   AAAUCACCGGCGGUGAAAAAGCUGUUACCGUUCACCU--UCGCCUGCUGUGCCUUCGCGGUAU---CCGCUUCGCUG------------AU-GCGCUUC----GUGUCAC----------
+NW_021705798.1:28511-29897 ---UCCUGUCAAGCUUCGUUGCUUACGGUGUGGACUUCGCUGCGCCGCGUCACAGUGCGGGUG---AACACGCGGCC------------GCGAGCAACC----AGGCGAC-------GCC
+NW_021705745.1:83190-84432 UCGAGCACACAGCACUUGGGGCCUCAGGCGAAGACGUUGUAAUUGUGGGACAUCAGUCGUACACACCAGAUCUAUUG------------GUGCUCGCUA----CGGAAAA-------ACU
+NW_021706084.1:17102-18440 UGUAUAAUGCCCUGCGUGUGCAGGUAAA-GCAGACCCUUGAGCAGCUGCUGGGUCCAGCUUCGCACCACGGCAGGAU------------GCAAUGGUUUAAAAACUUU-C-------ACU
+NW_021705786.1:5861-6767   UACACCCGACGGACCAUAU-GUCUACAGG------CGUGCCAUACUGUGUGGAGCCAAGCAGUACA------------------------------------------------------
+NW_021706014.1:2681-4634   CUCAUGGUGGCUGCCUCUGUGUUUCCUAUCAUGUUGUCGUAGAGGUCUUGGGGCACCAGGGCGCGAAUGGCGGUGAUCAAAGGCACCAACCAGGCCUUGCAGUAGUCUACCACCAUUUCC
+
+NW_021705781.1:65798-66371 ------------------------------------------------------------------------------UGCGGCGACAACGCAUCCA-----------------------
+NW_021705755.1:10160-10793 ------------------------------------------------------------------------------UGUA----CAAUACAUUCAGCGACUCUUUCA-----------
+NW_021705918.1:28921-29239 ------------------------------------------------------------------------------------------------------------------------
+NW_021705860.1:37802-39002 ACGUUGUGCUGGUGCUGGAGUUGUG-UCCC--------------------------------UGUGGGA---CGCUUCUGCAG-AAG---------------------------------
+NW_021706144.1:1909-3022   -------UCUCGCGCUGCAUCACUG-CCGAGGUCAUCUGCGC-------------------UUGGUUGG---CGGUGUCGUAGCUAG---------------------------------
+NW_021705798.1:28511-29897 ACCGC---UUCCUUUGCUAGACACC-GCGCUCUACUGCCUGCAUGAGACAGCAAAGACGAUUUGUGCGC---GGCCUGCGGCGCCAC---------------------------------
+NW_021705745.1:83190-84432 GAUU------CCGUUGAGGUUUCU------------------------------------UUUUACGCG---UGAUUCCGCCGUAUA---------------------------------
+NW_021706084.1:17102-18440 AAAGAGGACAAGGGCCCACCACCGAUGUAUUCCAU--------------AAACAUACAAAUGGUGGUAC---UCGGUGAAUCGUAGC---------------------------------
+NW_021705786.1:5861-6767   ---------UCCGGGGAGCGGUACCAGAGCGUCACCAC----------------------------CUCAUGCGUAAACUUCUUAAC---------------------------------
+NW_021706014.1:2681-4634   AAUCCAUUGUCGAGGGCCUGAUUGCGAAGAUUCGGGAUUAUGGGGUCCAUCCCUCGCUGCUCCUCUUCAUAGGCUUCGCGGAGCCACUCGGUAACCAUGCAACCGGCUAAAUUAAAAAAC
+
+NW_021705781.1:65798-66371 --------------------------------------------------------------------------------------CAAGGAAGAUUAAGGCAGGCUUGACACC---CUC
+NW_021705755.1:10160-10793 -----------------------------------------------------------------------------------UAUUGCGU-AUCUUUUGAACACCUUUAAUGUCCACCU
+NW_021705918.1:28921-29239 ------------------------------------------------------------------------------------------------------------------------
+NW_021705860.1:37802-39002 -------CUGAGGGCAA---------------------------U-GCCGCAAGGAAGGUUUGAUGAACGACGGGCGUCGCGGUA-------UGUGCGACAGGCC---GCACGGGCGCUA
+NW_021706144.1:1909-3022   -------UCGUGGGCGG---------------------------U-UCCCGCAGGAGGGCUUCGU----AGUGGGCGA--GAGUG-------CAGUCGAC--------------------
+NW_021705798.1:28511-29897 -------UUGAGGAAAA---------------------------UAUUACUGAGCAUAAUG--AAAACGGCGACCCCGCACCAAAGCAAGAUCAAGGCAGUUUCC---A-------GAAU
+NW_021705745.1:83190-84432 -------UCG-----------------------------------------------------------------CAAUGGCC-GACGGGAC--AAUGGAAAGC-------AUGACUUUU
+NW_021706084.1:17102-18440 -------ACACACCCUU---------------------------AAAGGUGCAG---AGAUUCUUGUGAUGCAGACGCCGCAUAAU--------GUUAAUCUCCC---GCGACAGGGAGA
+NW_021705786.1:5861-6767   -------GGGAAUGCCA---------------------------AACGCCCGCCCCAGGCCA--------------AAGUCCGC-CAGCUUCACAUUCUUCUCAC---GC------GAGA
+NW_021706014.1:2681-4634   UGCGCGUGUGGGCGCAAAGUCAAGGCGUUAUCUGCCAGAAUAAUUAUAGCUGACAAGAGCAGCGGUACAUCCUCUAGUUCCACCACAUUU---GCGGCUGCUAUCUUUUCAAGACCGUGC
+
+NW_021705781.1:65798-66371 CUUGUCUU----------------UGAUGGAGU-UCUCCCAGGAGCGAAUAAACCUCUC---------------CCACAGCGAGGCCAGU------------------------------
+NW_021705755.1:10160-10793 CAAGGAUG----------------CAAACCUUUCCGGCGUCCCGAACCACAUUUAUCGCAUUCACA--------CUAGUGCCAUACAAAU------------------------------
+NW_021705918.1:28921-29239 ---------------------------------------------ACAAAAGUAUCAUGGCACGAA--------CGGGUCGUGGUACAAA------------------------------
+NW_021705860.1:37802-39002 GCGUAUCUG---CACGGACAU-GGCAUUGCCCACCGCGACU-------UGAAACUAGAGAA-------------CGUUUUUUUAGAUGCG--CGG------------------GGUGUGG
+NW_021706144.1:1909-3022   GCGGCUCCA---C-UCGUCGA-GGGCGGGGUCAUCGUGGCUACAGAGAAGGAAGGCGUCCC-------------CG-CGGAUGUCGCGCU--GCA------------------CGAGCGU
+NW_021705798.1:28511-29897 GGUUUUCUUACGCUGGUGAAUAGUUACACGUUGUGUUCGCUUCUGAGGUU---CUUUGCCG-------------AGGAGGAGGAGGAGGG--GGG------------------GGAG-GU
+NW_021705745.1:83190-84432 ACAUCACCAACGUGGCAUUGCCGGCA---ACUGAUUUA----------------UCCACCA-------------GGCUGGUGG------C--UAU------------------AUCAAGU
+NW_021706084.1:17102-18440 CAAGCUC-----CUUGACACUGAAUACACCUGUUUUCUUCCCAAUCUCCACACACUUCACGGCGUAGAAAGAGCCAUCGUUGAGUAAACCCAAGU------------------AAACAGA
+NW_021705786.1:5861-6767   UGAGCAAGUUCGGCGGCUUG-------AGGUC----------------------------------------------------------------------------------------
+NW_021706014.1:2681-4634   AGCAGCAAGUCACGUAAACGCGGG----GCUGUGAUCAGUACAGUCUCAAACAGUAACUCUCUCAAAAACUGAGAAAAGGGUUGAGUGCCACUAUUUGCAAAGAGCUUAAUAAAGCAAUU
+
+NW_021705781.1:65798-66371 ---------------------------------------------------------------------------------------------------------UCCCCGCCCACCUCG
+NW_021705755.1:10160-10793 ---------------------------------------------------------------------------------------------------------U-CCCAUGCACCUCG
+NW_021705918.1:28921-29239 ---------------------------------------------------------------------------------------------------------GCCCAACAUUUCAGG
+NW_021705860.1:37802-39002 CAAGGCUGGGAGAUUUUGG----------------GUGGAGUAAGGC--CGUUGAGGAGC---------------CGAC----GGUGAAGCAC-------GAC----CCCGCCCCUCAUU
+NW_021706144.1:1909-3022   GCUGGCACGGGA----GUU----------------GAGGGCGAGGUC--CUUAAAGCGGCCACUGU------CGUCGAU----GUAGAGGGAA-------GUG----CCCACAAACC--U
+NW_021705798.1:28511-29897 GGUGGUGGAAGCAAAAUGGAAUGAGGCGAAGCCAAGCGCUGGGGGAA--GGA--AGCG-----UGA------CGCAGCC----GACUCCUCAC-------UUCGAGAGGCGCCCUUGCGU
+NW_021705745.1:83190-84432 GGAGCCACCGUGACAAUUG------------------GGUCCUUGUCAUCUGGUAGUGUCACCCAU------CGCAUCG----AGAGUAGCGAUCCUGUUGUGGAUAUCUGCUUUUCAGG
+NW_021706084.1:17102-18440 GCCGUAUGUCCCACGGCCAAUCAACAGACCACGACGCCACGAUCGGAGCACAGGUGCGUCGCUCGUUUGCAGCAUCUCC----GGAGUGAUGCCCUCUGGGCUCAGUGUGGCCCACGA--
+NW_021705786.1:5861-6767   -----CCGGUGCAGAACGUUUCGAUCGUGGCAAAAGUGCACGCCAUUCAGCAGGUCCCGCA---------UAAAGUCCU----GAAUGGUGGC--------------CGCAUCCAGGUUC
+NW_021706014.1:2681-4634   UUCCUCACGGUUUAAAUGGUAGAGAAACGCCGUGAGACUCGCCGACUGCUGGGUAGUUAUGUCC-----CCAUACACCCAAACGAGGGGGUGAUCAAUGCG---------GGCCAAAAAA
+
+NW_021705781.1:65798-66371 CGG---------AGUU--CCACUGUGCGGGGCAAGACC--------------UU------------------------------------------------------------------
+NW_021705755.1:10160-10793 CAGACCUCAAUAAACUCACCGUUGUCCCGCAUGCUGUCCACCGUGGCACGAUCA------------------------------------------------------------------
+NW_021705918.1:28921-29239 GUCGA-------UGCUUAUGACGUCGCA--------------------------------------------------------------------------------------------
+NW_021705860.1:37802-39002 CGGAC--------------AACUG-----------------CGGCACU------ACCUC--A-----------CACAGUGCGGGCGGCGAUGA----UGCGAAUG---------------
+NW_021706144.1:1909-3022   GUUGC--------------CGCGCC-CUGGCAUGA--GCAACGGUAUG------AUCUCGAA-----------GGAAGUCUGCUC------------CAGGUAGU---------------
+NW_021705798.1:28511-29897 UACACCACAGCAGUUCUUUACCAGU-UGUUUAGUA--UGAAACUUGGUCCACGUGCGCUAGA-----------GGGCGCAUUGCCAUCCUUGU----CAGCAUCA---------------
+NW_021705745.1:83190-84432 AGGUCCACAUGAAGUAACUAUUGCCACGCGUAAUAAACUGACGGUGUACGAUUUACGCAAGACUGCUCAGUUUCUGUGUGAAACCUGUGACGA----UGGCACCG---------------
+NW_021706084.1:17102-18440 ------ACUAUAUCUUUCCUCCUCCUCCGGCGUCACGCGAAUCGUGCUGUCGUCA-------------------GCUGCAACGUCUUGCAGGUC---GUCGUCAG---------------
+NW_021705786.1:5861-6767   CCUUCCUCCCGAUCCAUGUACUUCUUCAG---------------------AUCAAGCUCCAUGUACUCAAACACGAGGGUGAGACGGU----UC---UCACU------------------
+NW_021706014.1:2681-4634   ACGUU----UGAUACCCCCGGGUGCACAAAGCUCAGAGACAGUGUGGCCAAAAAAGCCACAAUUACUUCGUUGUCGGUGAAGAUCAGCGUCGCCGGUUUUUCUCGCAGGAUGAGGUAAAG
+
+NW_021705781.1:65798-66371 -----------------------------------------------------------------------UUGCUGCGGCGCCUUAAUGCCGAGUA-----------------------
+NW_021705755.1:10160-10793 -----------------------------------------------------------------------GAAAAGUG-AUACUCGCGUCCAUUUU-----------------------
+NW_021705918.1:28921-29239 ------------------------------------------------------------------------------------------------------------------------
+NW_021705860.1:37802-39002 --------U-----GUGUGGUGGCGGCGGCCGGCUAACGGUG----UGUGGCACG-CUGGACU---------AUUUGU---------CCCCGGAAAU----------------GCUGUC-
+NW_021706144.1:1909-3022   --------C-----CU-CGAUCAUUGCG---------------------UGCUGC-UGCUGCU---------CGCU--------------CGUGGCG----------------GCGGCA-
+NW_021705798.1:28511-29897 --------U-----CUUCGGUGCC-AAUGUCAUCUAUUAGCU----CGUUUUUCG-CCUUACUGUUUAAACGGGUGAUCGAUUAUUGCUCCUUCGCC----------------GGUGUG-
+NW_021705745.1:83190-84432 --------UAGACAUCACAACGUUUGCCACCUCCGACUCUGC----CUUGGCUGU-AGGGUCUAAAAGCGGUAUUGUUAAUAUUU-------ACAAC----------------AAGGGC-
+NW_021706084.1:17102-18440 --------UUUUCAU--CGGCAGCUGUGGCAAUGAAAUGGUC----GAGGGUUGU-GGUGAU-------ACGGCAG-----------CCUUUGGUGC----------------UGUCUC-
+NW_021705786.1:5861-6767   ------------------------------------AUGGCA----CACGUCAAGCAGCUUU-------ACAAU---------------GUUCGGAU----------------GACGAA-
+NW_021706014.1:2681-4634   CAUUUGCACAGAGUCGGCGGCGUGGAGGGCGUUGUGAUAGGCAUUAUCUGUAGCAUAACCCUCAAAGAGAGAGGAGAGGAAGCUCAGGAGCUUCUCCACAUCCAUCUGACUGCUGAAGGA
+
+NW_021705781.1:65798-66371 -----------------------------------------------------------AAUGCACCUCCUGCCCCUGC----------------GUUGGGGCGUCGUGGAUCGGACGGG
+NW_021705755.1:10160-10793 -----------------------------------------------------------CUUCACCUUCACGCGGCGCC----------------CUUGUUGUGU--GUGA--------G
+NW_021705918.1:28921-29239 ---------------------------------------------------------------------AAACUCCA-C----------------CUUGGGGUU----------------
+NW_021705860.1:37802-39002 ---UGGCAUGCCUCACACCUUUA-----------------AGACUGAU---GUGUGGUC-UCUUGGUGU-CAUGCUCGCG-----------------GAG-AUGC---------------
+NW_021706144.1:1909-3022   ---GCGGCAGCAGCAGCGUCUCC-----------------CUGCUGCUUCGCCUCCUUCAUCUUCGCCG-UGAGGUGUCGCGC--------------CAUCUCG----------------
+NW_021705798.1:28511-29897 ---AGGUGGAACCUCUACUAUGAGGUGGGAGUGGAAGCGGCGCAGAAGGCGCUUGCCUACGCCCCGCCCUUGCUGCGAGAGAC--------------GGCAGCGCUACUCGUGUCCUAUU
+NW_021705745.1:83190-84432 ---UCUGCAGGACCCGCGAAG----------------------ACUCUCA---------AGAACCUGACGACAAGCAUCA-AU--------------UGUUUGGC---------------
+NW_021706084.1:17102-18440 ---GCCAUAG---UCGAC-----------------------------------------------------AACACUGC---U--------------AGUGCGGUUGCCGUCGCCACCGU
+NW_021705786.1:5861-6767   ---GCUCUUUUAGUAG----------------------------------------------------------CGAGAUCUC--------------UCGG-------------------
+NW_021706014.1:2681-4634   AAAGUUUGCAAGCACGCUAGUACACACUGAAAGAAAGACUCUUCUUGGGUCCUUCAUCAACUCCCCGUUGAAAUCGGUCACGUCACGGCUGCUAAAAUCGAUGCUUUCCACUUCCUUCAC
+
+NW_021705781.1:65798-66371 CCUGCAGAGUGCC----GCUUUCGCACAUGCAACU----------------------GAGCUGCCG--C---------------------------------------------------
+NW_021705755.1:10160-10793 ACGGA--AUAGCCAAAAUAAUCCGGAAACUCC-UU----------------------CAGCAAGCGGCC---------------------------------------------------
+NW_021705918.1:28921-29239 ------GGUUACACCAAGACU-------UUUCAGA----------------------UAUGCAUUCAUC---------------------------------------------------
+NW_021705860.1:37802-39002 --------UCACCGGCGCGCCCCC---------CU-----------------UUUACUGCGUGUCACACCAGGGCACCCUCGA-CGCAAUUCGCGAGGCGGACC----------------
+NW_021706144.1:1909-3022   ------------CGCCGCUGAUCC---------UC-----------------GGAAAGCAGCUGCCGGCGAAAGUACUGCUGG-AGGGAGGCGCGAAACUCCUC----------------
+NW_021705798.1:28511-29897 GCCGCCAAUUCCCUCCGCUGUAUCAGUCG---GUU-----------------CUGAAGCAGGUGGGGGCGGAGGCUCACUUUAUCCUGGAUCAGCUGGUGCACU----------------
+NW_021705745.1:83190-84432 -------AUUUGGAGAACGCAGCAACGGUGACGCG-----------------GUGCUUGCGUACUCGACCAAGGCCCAGAAGGGUGGAUUUCGUCUCGC---CG----------------
+NW_021706084.1:17102-18440 CUUUGCUACCCUCUCCUCCCUCGCGGAAGGUCCCU-----------------GUGGUGUCAAGGCCGCCC----CUCAAUGGAGUGCGUCUAUCGUUAACGGAG----------------
+NW_021705786.1:5861-6767   ----------AUGGCAGUGC-----------------------------------ACGGCACACCCUCC-------UCCUCCGUGUCAAGACG---------------------------
+NW_021706014.1:2681-4634   AUAUUUCAGUGUCUGAUGCAUGACCCUGUUCAUUUGUCCAAAGGUUUCGGUGGGGUCUUGCAGGAGCGGGACGUCACGCUUCAGGUUGGUUUGAAUACUAGCCCAGUUGGCGGGAUUAUU
+
+NW_021705781.1:65798-66371 ---------------------------------AACAGGU-UUGUUUU-------UCCCGAGCCCGAGGAGCCAAGCACGUAAACGACGAGCGAG-------------------------
+NW_021705755.1:10160-10793 ---------------------------------AAGAAGCGCUCCUUU-------CCCUACGCCAGAGGGGCCACAGACAGCAAUUGCCUCUAAUGGAAACUCAC---------------
+NW_021705918.1:28921-29239 ---------------------------------ACAUCGGGGUUGCUU-------UC----GAUGGGCAGCCAACA--------------------------------------------
+NW_021705860.1:37802-39002 ---------------CUCACUUGGGC-GACGA-----------CGUUC-AUAUC--------------U---------CAUCACUGGCCCGUGAA-----------------UUGGUGCU
+NW_021706144.1:1909-3022   ---------------AUCGCUGCCGCCGGCAA-----------ACGUC-AUCUCGCGCGGC-GCGGCGU---------UGUCGUCGGCGG--GAA-----------------UCAGCACA
+NW_021705798.1:28511-29897 ---------------CGAAGUUGUUUCACUUU-----------CCAUCGAGCUCCCACGAG-GAGAUGG---------AGAUG---GAACGUUAC-----------------GUGUU---
+NW_021705745.1:83190-84432 ---------------UGCUCCCAGAGUGCCGUGUCGUGCCGU-CCUUUCCUGCUGUUUCGC-AGCGUCA---------CCAGUUUAUUCAGAGUU-----------------UGGCCUUU
+NW_021706084.1:17102-18440 ---------------CACCUCGUCUCU-------UUUCGCCC-GCCCGAAAAAGAUUUCUUCUUCGUGC---------CACACCUGGAGCAGAAC-----------------UUCGCCGU
+NW_021705786.1:5861-6767   ----------------AAUCCGCUUCAGC---------GCGA-CGGUGGCACCGGUGGCGGUGUCACGG------------GCCCUGAACACGAC-----------------ACCAUACG
+NW_021706014.1:2681-4634   GUCCUGCAAAUUGAACUUCUCCGCCCUGCAGUGGCUCGUAGCGUCAGCAAAAAGAAGACUCCGCGCAGGAGCAUGACCCAUGAAGAGGGCGUCACCAAAACACCUCCCUUCUCUUUCCCG
+
+NW_021705781.1:65798-66371 --------------------------------------------------------------------------------------------CUUUUCAU
+NW_021705755.1:10160-10793 ------------------------------------------------------------------------------------------UCCUUACCAU
+NW_021705918.1:28921-29239 -------------------------------------------------------------------------------------------CUUCGACAU
+NW_021705860.1:37802-39002 GACAAUGCUGCAGAAGGACCCGGACGCGCGUCCAACAAUGGCAG-AGGUGCUG-----CAACACCCAUGGACGAGACCACACCGGGAGAAGGCGAAGUAA
+NW_021706144.1:1909-3022   UAC----CGGAAGAAGUUCACUGUGGGGCCUUGACCACUCAUCG-CGUGCCUUGC--CUGGGCGCACGGGAU-------------------------CAU
+NW_021705798.1:28511-29897 --CUAUGAUAAAAAAAGCAGGACGACGACGACGAACGACGACGG-CGGCGACGGC--AAUGCACCACGAGGCGGCAGCCAAGCGUGA-------------
+NW_021705745.1:83190-84432 GCCCCAACCGUUC------------------------CUGUGCU-UUCUGUCGGUGAAAAGCAGAAGGUCACGA------------ACUACGCGUUGUGA
+NW_021706084.1:17102-18440 UAACUUGAUGAAAUGGGCACCGCAGUGGUGACACAUCUGUGCCUCCGCCGCCUGCUUUUUGCAGCCAACGAUGCCCUCCGA----------------CAU
+NW_021705786.1:5861-6767   UCCCCUCACCAA-------------------------UCUUCUCCUGUCGCUCGUAGCGAGUGCC--------------------------------CAU
+NW_021706014.1:2681-4634   CACGCCUUUUUCAGGUUCCUCAUAGUGCGCGCUGAGGACGGCGG----UGGAGAGUUUCCCUAGGGCCGGUCGCUGCAGCCCAUUUUUUUUGUGAGGCAU
+
+alifold                    ..............................((........................................................................................
+                           ...............................................................(((((((((..................................))))))))).....
+                           ........................................................................................................................
+                           ................((((((.(((((..........................)))))..))))))...................................((((..............
+                           ......))))..........................................((((((((..(((((...........................((((........))))(((((.....
+                           ......)))))..............))))).)))))))).................................................................................
+                           ...........................................((((((((....)))))))).........................................................
+                           ........................................................................................................................
+                           .............................................................................................(((((.((((.............))))
+                           .)))))...............................................((((((((................))))))))...................................
+                           ........................................................................................................................
+                           ........................................................................................................................
+                           ..................................................(((((.((((((..........((((.................))))...................))).
+                           ...))))))))...........................................................(((((((....................)))))))................
+                           ............(((.((((......................................)))).)))......................................................
+                           .........................................(((((((................))))))).................................................
+                           ..............................................(((((.........)))))...)).............................. (-59.82 = -26.65 + -33.17)
