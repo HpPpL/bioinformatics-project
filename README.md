@@ -4,6 +4,8 @@
 - [Групповая презентация](https://docs.google.com/presentation/d/1lf8zt1BlVBf_tpJix5-Uvcekrgt4gaCcpDrAxZpYYio/edit?usp=sharing)
 
 # Краткое описание организма
+![Trypanosoma_rangeli](https://github.com/HpPpL/bioinformatics-project/blob/main/chapter_1/results/Trypanosoma_rangeli.png)
+
 Trypanosoma rangeli — жгутиковый паразит из группы трипаносом, переносимый кровососущими клопами и инфекционный для разных млекопитающих, включая человека. Хотя не вызывает заболеваний у людей, может быть спутан с возбудителями болезни Шагаса.
 
 Вид упоминается на PubMed в 572 публикациях, N50 равен 43,2 Кб, длина генома 21,2 Мб.
@@ -36,9 +38,11 @@ Intergenic | 1865 | 75,69% | 14119 | 96,49% | 22604 | 80,94%
 + [LocARNA](http://www.bioinf.uni-freiburg.de/Software/LocARNA/)
 
 А также:
+
 ![Image](https://github.com/HpPpL/bioinformatics-project/blob/main/chapter_3/results/aln.png)
 
 Также было сделано выравнивание через [muscle](https://github.com/HpPpL/bioinformatics-project/blob/main/chapter_3/results/atpaseBeta.fas)
+![Image](https://github.com/HpPpL/bioinformatics-project/blob/main/chapter_3/results/muscle.png)
 
 Собственно и сами последовательность изначальные [genes_2.fa](https://github.com/HpPpL/bioinformatics-project/blob/main/chapter_3/results/genes_2.fa)
 
@@ -48,3 +52,7 @@ Intergenic | 1865 | 75,69% | 14119 | 96,49% | 22604 | 80,94%
 + [genomic.bed](https://github.com/HpPpL/bioinformatics-project/blob/main/chapter_3/results/genomic.bed)
 + [prom_gen.bed](https://github.com/HpPpL/bioinformatics-project/blob/main/chapter_3/results/prom_gen.bed)
 + [pqs.bed](https://drive.google.com/file/d/1kYjasU9ZfelEpG98P4R-g8zCAfEqhhjr/view?usp=drive_link)
+
+
+## Свёртка в структуры
+Ну и групповые результаты проекта по сверткам:
